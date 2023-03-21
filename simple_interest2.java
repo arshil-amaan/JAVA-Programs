@@ -4,6 +4,6 @@ class simple_interest2 {
     float si,p=250,r=15;
     int t = 3;
     si=(p*r*t)/100;
-    System.out.println(si);
+    System.out.println("Simple Interest is :\n"+si);
   }
 }
