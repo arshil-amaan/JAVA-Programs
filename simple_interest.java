@@ -5,6 +5,6 @@ class simple_interest {
   public static void main(String[] args){
     simple_interest myobj = new simple_interest();
     myobj.si=((myobj.p*myobj.r*myobj.t)/100);
-    System.out.println(myobj.si);
+    System.out.println("Simple Interest is :\n"+myobj.si);
   }
 }
