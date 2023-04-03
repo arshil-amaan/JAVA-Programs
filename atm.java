@@ -10,7 +10,7 @@ public class atm{
 		int usr_pin;
 		for (int i = 0; i < 4; i++){
 			if (i == 3){
-				System.out.println ("Maximum Trial Reached\nInsert Card Again");
+				System.out.println ("**********Maximum Trial Reached**********\nInsert Card Again");
 				return false;
 			}
 			else if(i!=0){
@@ -48,7 +48,7 @@ public class atm{
 		}
 		else{
 			avl_bal-=usr_amt;
-			System.out.println("Here it is $🤑🤑🤑$ ");
+			System.out.println("Here it is 💰💰 ");
 		}
 	}
 	static void pin_change(){
@@ -58,7 +58,7 @@ public class atm{
 		else{
 			System.out.println("Enter new PIN");
 			pin = sc.nextInt();
-			System.out.println("PIN changed successfully");
+			System.out.println("PIN changed successfully!!!");
 		}
 	}
 
@@ -110,6 +110,5 @@ public class atm{
 				System.out.println("**********ERROR**********\nInvalid Option Selected\n");
 		}
 		}while(usr_resp != 0);
-
   }
 }
