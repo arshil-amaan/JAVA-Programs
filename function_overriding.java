@@ -7,7 +7,7 @@ class par{
   }
 }
 
-class function_overloading{
+class function_overriding{
   int fun(int n){
     System.out.print("defined inside main ");
     return 3*n;
@@ -15,12 +15,12 @@ class function_overloading{
   public static void main(String []args){
     Scanner sc = new Scanner(System.in);
     par ob = new par();
-    function_overloading obj = new function_overloading();
+    function_overriding obj = new function_overriding();
     ob.fun(7);
     System.out.println("using\npar ob = new par();\nob.fun(7)");
     System.out.println("****************************************");
     obj.fun(9);
-    System.out.println("using\nfunction_overloading obj = new function_overloading();\nobj.fun(9);");
+    System.out.println("using\nfunction_overriding obj = new function_overriding();\nobj.fun(9);");
     sc.close();
   }
 }
