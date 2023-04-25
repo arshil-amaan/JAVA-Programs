@@ -58,5 +58,6 @@ class exception_handling{
   }
   System.out.println(str2.length());
   sc.close();
+    
   }
 }
