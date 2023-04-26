@@ -7,7 +7,5 @@ class average2 {
       avg+=arr[i];
     }
     System.out.println("Average is :\n"+avg/arr.length);
-
-
   }
 }
