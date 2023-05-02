@@ -52,11 +52,11 @@ class exception_handling{
     try{
       System.out.println(str1.length());
       System.out.println(str4.length());
-  }catch(Exception exc){
-    System.out.println("string me null hai");
-    System.out.println("Exception Name : "+exc);
-  }
-  System.out.println(str2.length());
-  sc.close();
+    }catch(Exception exc){
+      System.out.println("string me null hai");
+      System.out.println("Exception Name : "+exc);
+    }
+    System.out.println(str2.length());
+    sc.close();
   }
 }
