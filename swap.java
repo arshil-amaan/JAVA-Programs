@@ -1,7 +1,9 @@
 // code to swap two integers
 import java.util.Scanner;
 public class swap {
+  // function to swap two integers using third variable
   static int swapin(int a, int b){
+    // local variables
     int temp=a; a=b; b=temp;
     System.out.println("First num = "+a+", Second num = "+b+" (after function call)");
     return 0;
