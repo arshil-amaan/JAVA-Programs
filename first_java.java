@@ -7,6 +7,7 @@ class first_java {
         // taking user input
         int number = sc.nextInt();
         System.out.print("You entered " + number);
+        // it closes sc object of Scanner class, otherwise warning may occur
         sc.close();
     }
 }
