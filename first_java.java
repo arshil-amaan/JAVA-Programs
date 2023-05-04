@@ -4,6 +4,7 @@ class first_java {
     	//a scanner object is created to take input using objname.nextInt() / .nextFloat() / .nextLine() / .next()
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: \n");
+        // taking user input
         int number = sc.nextInt();
         System.out.print("You entered " + number);
         sc.close();
