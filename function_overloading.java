@@ -13,6 +13,7 @@ public class function_overloading {
   }
 
   public static void main(String[] args) {
+    // object created of driver class
     function_overloading obj = new function_overloading();
     //multiplied because 2 arguments passed
     System.out.println(obj.calc(3,6));
