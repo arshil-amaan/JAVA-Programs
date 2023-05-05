@@ -6,7 +6,7 @@ class A{
     return 2*m;
   }
 }
-
+// driver class
 class function_overriding{
   int fun(int n){
     System.out.print("defined inside driver class ");
