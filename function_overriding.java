@@ -11,6 +11,7 @@ class A{
 class function_overriding{
   int fun(int n){
     System.out.print("defined inside driver class ");
+    // this function returns triple of n
     return 3*n;
   }
   public static void main(String []args){
