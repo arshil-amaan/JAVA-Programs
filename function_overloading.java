@@ -11,6 +11,7 @@ public class function_overloading {
   }
   // calc function taking 2 double arguments 
   public double calc(double a,double b){
+    // this function returns division of a by b
     return (a/b);
   }
 
