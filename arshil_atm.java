@@ -6,7 +6,7 @@ public class arshil_atm{
 	static int pin = 1234;
 	static int usr_resp;
 	static int usr_pin;
-	pin check function
+	// pin check function
 	static boolean pin_check(){
 		for (int i = 0; i < 4; i++){
 			if (i == 3){
@@ -34,6 +34,7 @@ public class arshil_atm{
 	static void menu(){
 		System.out.println("1- Mini Statement\n2- Cash Withdrawl\n3- Cash Deposit\n4- PIN Change\n0- EXIT");
 	}
+	
 	static int mini_sttmnt(){
 		if(pin_check()==false){
 			System.exit(0);
