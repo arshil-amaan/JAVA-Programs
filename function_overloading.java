@@ -6,6 +6,7 @@ public class function_overloading {
   }
   // calc function taking 3 int arguments 
   public int calc(int a, int b,int c){
+    // this function returns sun of a,b & c
     return (a+b+c);
   }
   // calc function taking 2 double arguments 
