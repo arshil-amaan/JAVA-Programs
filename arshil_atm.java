@@ -6,7 +6,7 @@ public class arshil_atm{
 	static int pin = 1234;
 	static int usr_resp;
 	static int usr_pin;
-	//pin check function
+	pin check function
 	static boolean pin_check(){
 		for (int i = 0; i < 4; i++){
 			if (i == 3){
