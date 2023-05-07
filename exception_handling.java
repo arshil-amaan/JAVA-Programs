@@ -2,6 +2,7 @@ import java.util.*;
 class exception_handling{
   int prod(int a, int b){
     int c=852;
+    // suspected erroneous instructions are kept in try block
     try{
       c=a/b;
     }
