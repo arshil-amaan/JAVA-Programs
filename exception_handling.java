@@ -6,6 +6,7 @@ class exception_handling{
     try{
       c=a/b;
     }
+    // if exception occur by try block then catch block gets executed
     catch(Exception e){
       System.out.println("!!!Can't divide by zero!!!");
       System.out.println("Exception Name : "+e);
