@@ -1,6 +1,6 @@
 import java.util.*;
 class exception_handling{
-  int prod(int a, int b){
+  int division(int a, int b){
     int c=852;
     // suspected erroneous instructions are kept in try block
     try{
@@ -26,7 +26,7 @@ class exception_handling{
     p=sc.nextInt();
     System.out.println("Enter Second Num");
     q=sc.nextInt();
-    obj.prod(p,q);
+    obj.division(p,q);
 
     System.out.println("********************");
     
@@ -63,3 +63,7 @@ class exception_handling{
     sc.close();
   }
 }
+
+// exception methods
+// e.getMessage() prints only message of error
+// e.tostring()   prints full error as string which can be stored as String
