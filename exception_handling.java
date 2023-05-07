@@ -11,10 +11,10 @@ class exception_handling{
       System.out.println("!!!Can't divide by zero!!!");
       System.out.println("Exception Name : "+e);
     }
-    //  // finally block gets executed no matter error occured or not
-    // finally{
-    //   // System.out.println("Finally Done");
-    // }
+//     // finally block gets executed no matter error occured or not
+//     finally{
+//       // System.out.println("Finally Done");
+//     }
     return c;
   }
   public static void main(String []args){
