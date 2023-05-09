@@ -1,4 +1,3 @@
-package temporary;
 import java.util.*;
 import java.io.*;
 
