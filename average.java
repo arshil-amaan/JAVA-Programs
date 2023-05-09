@@ -6,6 +6,7 @@ class average {
   public static void main(String []args){
     // Object created to access instance variables
     average myobj = new average();
+    // storing length of array using arr.length
     myobj.len=myobj.arr.length;
     for(int i=0;i<myobj.arr.length;i++){
       myobj.sum+=myobj.arr[i];
