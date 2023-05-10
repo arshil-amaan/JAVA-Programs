@@ -14,6 +14,8 @@ interface b{
 
 public class multiple_inheritance implements a,b {
   int num3=27;
+  
+  // because interfaces are abstract hence we require to define functions in driver class 
   public void show_a_var(){
     System.out.println(num1);
   }
