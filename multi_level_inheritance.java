@@ -11,6 +11,7 @@ class parent0{
 class parent1 extends parent0{
   double ci;
 }
+
 // driver class
 class multi_level_inheritance extends parent1{
   public static void main(String []args){
