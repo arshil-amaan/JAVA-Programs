@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// driver class
 class first_java {
     public static void main(String[] args) {
     	//a scanner object is created to take input using objname.nextInt() / .nextFloat() / .nextLine() / .next()
