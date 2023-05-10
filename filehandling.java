@@ -16,6 +16,7 @@ public class filehandling {
       // creating new file using File object
       f.createNewFile();
       // ********************************************************
+     
       // object of FileWriter
       FileWriter fw = new FileWriter(file_name);
       // writing data on file
@@ -25,6 +26,7 @@ public class filehandling {
       System.out.println("Error is : "+e);
     }
     // **********************************************************
+    
     // read from file
     try{
       // object of File
@@ -41,6 +43,7 @@ public class filehandling {
       System.out.println("Error is : "+e);
     }
     // **********************************************************
+    
     // delete a file
     try {
       System.out.println("Enter file name with extension to delete");
