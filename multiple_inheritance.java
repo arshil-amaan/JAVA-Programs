@@ -1,5 +1,6 @@
 import java.util.*;
 
+// interfaces are similar to class but static and abstract in nature
 interface a{
   int num1=9;
   void show_a_var();
