@@ -18,7 +18,6 @@ class Arithematic{
     ~Arithematic();
 };
 
-
 Arithematic::Arithematic(){
   a=0;
   b=0;
