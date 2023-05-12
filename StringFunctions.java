@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 // driver class
 public class StringFunctions {
     
