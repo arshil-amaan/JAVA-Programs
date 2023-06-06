@@ -1,4 +1,3 @@
-
 class MyThread extends Thread{
 
 	String name;
