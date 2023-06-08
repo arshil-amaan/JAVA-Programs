@@ -2,42 +2,42 @@ import java.util.Scanner;
 
 // driver class
 public class StringFunctions {
-    
-    public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
-        
-        System.out.println("\nSelect a function to perform:");
-        System.out.println("1. length()");
-        System.out.println("2. charAt(int index)");
-        System.out.println("3. substring(int beginIndex, int endIndex)");
-        System.out.println("4. indexOf(char ch)");
-        System.out.println("5. lastIndexOf(char ch)");
-        System.out.println("6. toUpperCase()");
-        System.out.println("7. toLowerCase()");
-        System.out.println("8. trim()");
-        System.out.println("9. replace(char oldChar, char newChar)");
-        System.out.println("10. replaceAll(String regex, String replacement)");
-        System.out.println("11. split(String regex)");
-        System.out.println("12. startsWith(String prefix)");
-        System.out.println("13. endsWith(String suffix)");
-        System.out.println("14. contains(CharSequence sequence)");
-        System.out.println("15. codePointAt(int index)");
-        System.out.println("16. codePointBefore(int index)");
-        System.out.println("17. codePointCount(int beginIndex, int endIndex)");
-        System.out.println("18. compareTo(String anotherString)");
-        System.out.println("19. compareToIgnoreCase(String str)");
 
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+	public static void main(String[] args) {
         
-        switch (choice) {
-            case 1:
-                // length() function returns the length of the string
-                System.out.println("Length: " + input.length());
-                break;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a string: ");
+		String input = scanner.nextLine();
+
+		System.out.println("\nSelect a function to perform:");
+		System.out.println("1. length()");
+		System.out.println("2. charAt(int index)");
+		System.out.println("3. substring(int beginIndex, int endIndex)");
+		System.out.println("4. indexOf(char ch)");
+		System.out.println("5. lastIndexOf(char ch)");
+		System.out.println("6. toUpperCase()");
+		System.out.println("7. toLowerCase()");
+		System.out.println("8. trim()");
+		System.out.println("9. replace(char oldChar, char newChar)");
+		System.out.println("10. replaceAll(String regex, String replacement)");
+		System.out.println("11. split(String regex)");
+		System.out.println("12. startsWith(String prefix)");
+		System.out.println("13. endsWith(String suffix)");
+		System.out.println("14. contains(CharSequence sequence)");
+		System.out.println("15. codePointAt(int index)");
+		System.out.println("16. codePointBefore(int index)");
+		System.out.println("17. codePointCount(int beginIndex, int endIndex)");
+		System.out.println("18. compareTo(String anotherString)");
+		System.out.println("19. compareToIgnoreCase(String str)");
+
+		int choice = scanner.nextInt();
+		scanner.nextLine();
+        
+		switch (choice) {
+			case 1:
+				// length() function returns the length of the string
+				System.out.println("Length: " + input.length());
+				break;
             case 2:
                 // charAt(int index) function returns the character at the specified index
                 System.out.print("Enter an index: ");
