@@ -53,31 +53,31 @@ public class StringFunctions {
 				int endIndex = scanner.nextInt();
 				System.out.println("Substring from index " + beginIndex + " to " + endIndex + ": " + input.substring(beginIndex, endIndex));
 				break;
-            case 4:
-                // indexOf(char ch) function returns the index of the first occurrence of the specified character in the string
-                System.out.print("Enter a character: ");
-                char ch = scanner.next().charAt(0);
-                System.out.println("Index of first occurrence of " + ch + ": " + input.indexOf(ch));
-                break;
-            case 5:
-                System.out.print("Enter a character to search: ");
-                char chr = scanner.next().charAt(0);
-                int lastIndex = input.lastIndexOf(chr);
-                if (lastIndex == -1) {
-                    System.out.println("Character not found");
-                } else {
-                    System.out.println("Last index of " + chr + " is " + lastIndex);
-                }
-                break;
-            case 6:
-                // toUpperCase() function returns a new string with all the characters in uppercase
-                System.out.println("Uppercase string: " + input.toUpperCase());
-                break;
-            case 7:
-                // toLowerCase() function returns a new string with all the characters in lowercase
-                System.out.println("Lowercase string: " + input.toLowerCase());
-                break;
-            case 8:
+			case 4:
+				// indexOf(char ch) function returns the index of the first occurrence of the specified character in the string
+				System.out.print("Enter a character: ");
+				char ch = scanner.next().charAt(0);
+				System.out.println("Index of first occurrence of " + ch + ": " + input.indexOf(ch));
+				break;
+			case 5:
+				System.out.print("Enter a character to search: ");
+				char chr = scanner.next().charAt(0);
+				int lastIndex = input.lastIndexOf(chr);
+				if (lastIndex == -1) {
+					System.out.println("Character not found");
+				} else {
+					System.out.println("Last index of " + chr + " is " + lastIndex);
+				}
+				break;
+			case 6:
+				// toUpperCase() function returns a new string with all the characters in uppercase
+				System.out.println("Uppercase string: " + input.toUpperCase());
+				break;
+			case 7:
+				// toLowerCase() function returns a new string with all the characters in lowercase
+				System.out.println("Lowercase string: " + input.toLowerCase());
+				break;
+			case 8:
                 // trim() function returns a new string with leading and trailing whitespace removed
                 System.out.println("Trimmed string: " + input.trim());
                 break;
