@@ -78,48 +78,47 @@ public class StringFunctions {
 				System.out.println("Lowercase string: " + input.toLowerCase());
 				break;
 			case 8:
-                // trim() function returns a new string with leading and trailing whitespace removed
-                System.out.println("Trimmed string: " + input.trim());
-                break;
-            case 9:
-                // replace(char oldChar, char newChar) function replaces all occurrences of the specified oldChar with the newChar
-                System.out.print("Enter old character: ");
-                char oldChar = scanner.next().charAt(0);
-                System.out.print("Enter new character: ");
-                char newChar = scanner.next().charAt(0);
-                System.out.println("Replaced string: " + input.replace(oldChar, newChar));
-                break;
-            case 10:
-                System.out.print("Enter a substring to replace: ");
-                String oldSubstr = scanner.next();
-                
-                System.out.print("Enter a replacement string: ");
-                String newSubstr = scanner.next();
-                
-                // Replace all occurrences of old substring with new substring
-                String replacedStr = input.replaceAll(oldSubstr, newSubstr);
-                
-                // Display original and replaced strings
-                System.out.println("Original string: " + input);
-                System.out.println("Replaced string: " + replacedStr);
-                break;
-            case 11:
-                // split(String regex) function splits the string into an array of substrings based on the specified regular expression
-                System.out.print("Enter regular expression: ");
-                String regex = scanner.nextLine();
-                String[] substrings = input.split(regex);
-                System.out.println("Substrings:");
-                for (String substring : substrings) {
-                    System.out.println(substring);
-                }
-                break;
-            case 12:
-                // startsWith(String prefix) function returns true if the string starts with the specified prefix, false otherwise
-                System.out.print("Enter a prefix: ");
-                String prefix = scanner.nextLine();
-                System.out.println("Starts with " + prefix + ": " + input.startsWith(prefix));
-                break;
-            case 13:
+				// trim() function returns a new string with leading and trailing whitespace removed
+				System.out.println("Trimmed string: " + input.trim());
+				break;
+			case 9:
+				// replace(char oldChar, char newChar) function replaces all occurrences of the specified oldChar with the newChar
+				System.out.print("Enter old character: ");
+				char oldChar = scanner.next().charAt(0);
+				System.out.print("Enter new character: ");
+				char newChar = scanner.next().charAt(0);
+				System.out.println("Replaced string: " + input.replace(oldChar, newChar));
+				break;
+			case 10:
+				System.out.print("Enter a substring to replace: ");
+				String oldSubstr = scanner.next();
+
+				System.out.print("Enter a replacement string: ");
+				String newSubstr = scanner.next();
+
+				// Replace all occurrences of old substring with new substring
+				String replacedStr = input.replaceAll(oldSubstr, newSubstr);
+
+				// Display original and replaced strings
+				System.out.println("Original string: " + input);
+				System.out.println("Replaced string: " + replacedStr);
+				break;
+			case 11:
+				// split(String regex) function splits the string into an array of substrings based on the specified regular expression
+				System.out.print("Enter regular expression: ");
+				String regex = scanner.nextLine();
+				String[] substrings = input.split(regex);
+				System.out.println("Substrings:");
+				for (String substring : substrings)
+					System.out.println(substring);
+				break;
+			case 12:
+				// startsWith(String prefix) function returns true if the string starts with the specified prefix, false otherwise
+				System.out.print("Enter a prefix: ");
+				String prefix = scanner.nextLine();
+				System.out.println("Starts with " + prefix + ": " + input.startsWith(prefix));
+				break;
+			case 13:
                 // endsWith(String suffix) function returns true if the string ends with the specified suffix, false otherwise
                 System.out.print("Enter a suffix: ");
                 String suffix = scanner.nextLine();
