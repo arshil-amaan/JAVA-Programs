@@ -29,6 +29,7 @@ public class StringFunctions {
 		System.out.println("17. codePointCount(int beginIndex, int endIndex)");
 		System.out.println("18. compareTo(String anotherString)");
 		System.out.println("19. compareToIgnoreCase(String str)");
+		System.out.println("20. str1.concat(String str2)");
 
 		int choice = scanner.nextInt();
 		scanner.nextLine();
@@ -177,17 +178,17 @@ public class StringFunctions {
 					System.out.println("Input string is lexicographically equal to another string (ignore case)");
 				}
 				break;
-            case 20:
-                // Concatenate two strings
-                System.out.print("Enter the second string: ");
-                String str2 = scanner.nextLine();
-                String concatStr = input.concat(str2);
-                System.out.println("The concatenated string is: " + concatStr);
-                break;
-            default:
-                System.out.println("Invalid choice!");
-                break;
-        }
-        scanner.close();
-    }
+			case 20:
+				// Concatenate two strings
+				System.out.print("Enter the second string: ");
+				String str2 = scanner.nextLine();
+				String concatStr = input.concat(str2);
+				System.out.println("The concatenated string is: " + concatStr);
+				break;
+			default:
+				System.out.println("Invalid choice!");
+				break;
+		}
+		scanner.close();
+	}
 }
