@@ -119,64 +119,64 @@ public class StringFunctions {
 				System.out.println("Starts with " + prefix + ": " + input.startsWith(prefix));
 				break;
 			case 13:
-                // endsWith(String suffix) function returns true if the string ends with the specified suffix, false otherwise
-                System.out.print("Enter a suffix: ");
-                String suffix = scanner.nextLine();
-                System.out.println("Ends with " + suffix + ": " + input.endsWith(suffix));
-                break;
-            case 14:
-                // contains(CharSequence sequence) function returns true if the string contains the specified sequence, false otherwise
-                System.out.print("Enter a sequence: ");
-                String sequence = scanner.nextLine();
-                System.out.println("Contains " + sequence + ": " + input.contains(sequence));
-                break;
-            case 15:
-                // codePointAt(int index) function returns the Unicode code point at the specified index in the string
-                System.out.print("Enter an index: ");
-                int idx1 = scanner.nextInt();
-                System.out.println("Code point at index " + idx1 + ": " + input.codePointAt(idx1));
-                break;
-            case 16:
-                // codePointBefore(int index) function returns the Unicode code point before the specified index in the string
-                System.out.print("Enter an index: ");
-                int idx2 = scanner.nextInt();
-                System.out.println("Code point before index " + idx2 + ": " + input.codePointBefore(idx2));
-                break;
-            case 17:
-                // Get the number of Unicode code points in the string
-                System.out.println("Enter the beginning index:");
-                int startIndex = scanner.nextInt();
-                System.out.println("Enter the ending index:");
-                int endIndx = scanner.nextInt();
-                int codePointsCount = input.codePointCount(startIndex, endIndx);
-                System.out.println("Number of code points between " + startIndex + " and " + endIndx + " is: " + codePointsCount);
-                break;
-            case 18:
-                // compareTo(String anotherString) function compares two strings lexicographically
-                System.out.print("Enter another string: ");
-                String anotherString = scanner.nextLine();
-                int result = input.compareTo(anotherString);
-                if (result < 0) {
-                    System.out.println("Input string is lexicographically less than another string");
-                } else if (result > 0) {
-                    System.out.println("Input string is lexicographically greater than another string");
-                } else {
-                    System.out.println("Input string is lexicographically equal to another string");
-                }
-                break;
-            case 19:
-                // compareToIgnoreCase(String str) function compares two strings lexicographically, ignoring case differences
-                System.out.print("Enter another string: ");
-                String str = scanner.nextLine();
-                result = input.compareToIgnoreCase(str);
-                if (result < 0) {
-                    System.out.println("Input string is lexicographically less than another string (ignore case)");
-                } else if (result > 0) {
-                    System.out.println("Input string is lexicographically greater than another string (ignore case)");
-                } else {
-                    System.out.println("Input string is lexicographically equal to another string (ignore case)");
-                }
-                break;
+				// endsWith(String suffix) function returns true if the string ends with the specified suffix, false otherwise
+				System.out.print("Enter a suffix: ");
+				String suffix = scanner.nextLine();
+				System.out.println("Ends with " + suffix + ": " + input.endsWith(suffix));
+				break;
+			case 14:
+				// contains(CharSequence sequence) function returns true if the string contains the specified sequence, false otherwise
+				System.out.print("Enter a sequence: ");
+				String sequence = scanner.nextLine();
+				System.out.println("Contains " + sequence + ": " + input.contains(sequence));
+				break;
+			case 15:
+				// codePointAt(int index) function returns the Unicode code point at the specified index in the string
+				System.out.print("Enter an index: ");
+				int idx1 = scanner.nextInt();
+				System.out.println("Code point at index " + idx1 + ": " + input.codePointAt(idx1));
+				break;
+			case 16:
+				// codePointBefore(int index) function returns the Unicode code point before the specified index in the string
+				System.out.print("Enter an index: ");
+				int idx2 = scanner.nextInt();
+				System.out.println("Code point before index " + idx2 + ": " + input.codePointBefore(idx2));
+				break;
+			case 17:
+				// Get the number of Unicode code points in the string
+				System.out.println("Enter the beginning index:");
+				int startIndex = scanner.nextInt();
+				System.out.println("Enter the ending index:");
+				int endIndx = scanner.nextInt();
+				int codePointsCount = input.codePointCount(startIndex, endIndx);
+				System.out.println("Number of code points between " + startIndex + " and " + endIndx + " is: " + codePointsCount);
+				break;
+			case 18:
+				// compareTo(String anotherString) function compares two strings lexicographically
+				System.out.print("Enter another string: ");
+				String anotherString = scanner.nextLine();
+				int result = input.compareTo(anotherString);
+				if (result < 0) {
+					System.out.println("Input string is lexicographically less than another string");
+				} else if (result > 0) {
+					System.out.println("Input string is lexicographically greater than another string");
+				} else {
+					System.out.println("Input string is lexicographically equal to another string");
+				}
+				break;
+			case 19:
+				// compareToIgnoreCase(String str) function compares two strings lexicographically, ignoring case differences
+				System.out.print("Enter another string: ");
+				String str = scanner.nextLine();
+				result = input.compareToIgnoreCase(str);
+				if (result < 0) {
+					System.out.println("Input string is lexicographically less than another string (ignore case)");
+				} else if (result > 0) {
+					System.out.println("Input string is lexicographically greater than another string (ignore case)");
+				} else {
+					System.out.println("Input string is lexicographically equal to another string (ignore case)");
+				}
+				break;
             case 20:
                 // Concatenate two strings
                 System.out.print("Enter the second string: ");
