@@ -38,12 +38,12 @@ public class StringFunctions {
 				// length() function returns the length of the string
 				System.out.println("Length: " + input.length());
 				break;
-            case 2:
-                // charAt(int index) function returns the character at the specified index
-                System.out.print("Enter an index: ");
-                int index = scanner.nextInt();
-                System.out.println("Character at index " + index + ": " + input.charAt(index));
-                break;
+			case 2:
+				// charAt(int index) function returns the character at the specified index
+				System.out.print("Enter an index: ");
+				int index = scanner.nextInt();
+				System.out.println("Character at index " + index + ": " + input.charAt(index));
+				break;
             case 3:
                 // substring(int beginIndex, int endIndex) function returns a substring of the string
                 // from the specified begin index (inclusive) to the specified end index (exclusive)
