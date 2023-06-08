@@ -45,14 +45,14 @@ public class StringFunctions {
 				System.out.println("Character at index " + index + ": " + input.charAt(index));
 				break;
             case 3:
-                // substring(int beginIndex, int endIndex) function returns a substring of the string
-                // from the specified begin index (inclusive) to the specified end index (exclusive)
-                System.out.print("Enter begin index: ");
-                int beginIndex = scanner.nextInt();
-                System.out.print("Enter end index: ");
-                int endIndex = scanner.nextInt();
-                System.out.println("Substring from index " + beginIndex + " to " + endIndex + ": " + input.substring(beginIndex, endIndex));
-                break;
+				// substring(int beginIndex, int endIndex) function returns a substring of the string
+				// from the specified begin index (inclusive) to the specified end index (exclusive)
+				System.out.print("Enter begin index: ");
+				int beginIndex = scanner.nextInt();
+				System.out.print("Enter end index: ");
+				int endIndex = scanner.nextInt();
+				System.out.println("Substring from index " + beginIndex + " to " + endIndex + ": " + input.substring(beginIndex, endIndex));
+				break;
             case 4:
                 // indexOf(char ch) function returns the index of the first occurrence of the specified character in the string
                 System.out.print("Enter a character: ");
