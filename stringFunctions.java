@@ -44,7 +44,7 @@ public class StringFunctions {
 				int index = scanner.nextInt();
 				System.out.println("Character at index " + index + ": " + input.charAt(index));
 				break;
-            case 3:
+			case 3:
 				// substring(int beginIndex, int endIndex) function returns a substring of the string
 				// from the specified begin index (inclusive) to the specified end index (exclusive)
 				System.out.print("Enter begin index: ");
