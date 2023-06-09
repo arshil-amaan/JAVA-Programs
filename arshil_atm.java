@@ -21,7 +21,7 @@ public class arshil_atm {
 		
 			if (usr_pin != pin) {
 				System.out.println ("Invalid Pin");
-			} else{
+			} else {
 				System.out.println ("Pin Accepted");
 				return true;
 			}
