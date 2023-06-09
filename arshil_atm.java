@@ -12,8 +12,7 @@ public class arshil_atm {
 			if (i == 3) {
 				System.out.println ("**********Maximum Trial Reached**********\nInsert Card Again");
 				return false;
-			}
-			else if(i!=0) {
+			} else if(i!=0) {
 				System.out.println (i+" out of 3 invalid Trials");
 			}
 	
@@ -22,8 +21,7 @@ public class arshil_atm {
 		
 			if (usr_pin != pin) {
 				System.out.println ("Invalid Pin");
-			}
-			else{
+			} else{
 				System.out.println ("Pin Accepted");
 				return true;
 			}
