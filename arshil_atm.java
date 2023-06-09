@@ -20,7 +20,7 @@ public class arshil_atm {
 			System.out.println ("Enter Your PIN");
 			usr_pin = sc.nextInt();
 		
-			if (usr_pin != pin){
+			if (usr_pin != pin) {
 				System.out.println ("Invalid Pin");
 			}
 			else{
