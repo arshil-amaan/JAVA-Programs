@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class arshil_atm{
+public class arshil_atm {
 	static Scanner sc = new Scanner (System.in);
 	static int avl_bal = 200000;
 	static int pin = 1234;
@@ -9,7 +9,7 @@ public class arshil_atm{
 	// pin check function
 	static boolean pin_check(){
 		for (int i = 0; i < 4; i++){
-			if (i == 3){
+			if (i == 3) {
 				System.out.println ("**********Maximum Trial Reached**********\nInsert Card Again");
 				return false;
 			}
