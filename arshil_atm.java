@@ -13,7 +13,7 @@ public class arshil_atm {
 				System.out.println ("**********Maximum Trial Reached**********\nInsert Card Again");
 				return false;
 			}
-			else if(i!=0){
+			else if(i!=0) {
 				System.out.println (i+" out of 3 invalid Trials");
 			}
 	
