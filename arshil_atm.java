@@ -46,7 +46,7 @@ public class arshil_atm {
 		if(pin_check()==false) {
 			System.exit(0);
 		}
-		else{
+		else {
 			int usr_amt;
 			System.out.println("Enter Amount : ");
 			usr_amt = sc.nextInt();
