@@ -37,7 +37,7 @@ public class arshil_atm {
 		if(pin_check()==false) {
 			System.exit(0);
 		}
-		else{
+		else {
 			System.out.println("Available balance is : "+avl_bal);
 		}
 		return 0;
