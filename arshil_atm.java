@@ -29,7 +29,7 @@ public class arshil_atm {
 		return false;
 	}
 //menu
-	static void menu(){
+	static void menu() {
 		System.out.println("1- Mini Statement\n2- Cash Withdrawl\n3- Cash Deposit\n4- PIN Change\n0- EXIT");
 	}
 	
