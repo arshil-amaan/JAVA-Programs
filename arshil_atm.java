@@ -33,7 +33,7 @@ public class arshil_atm {
 		System.out.println("1- Mini Statement\n2- Cash Withdrawl\n3- Cash Deposit\n4- PIN Change\n0- EXIT");
 	}
 	
-	static int mini_sttmnt(){
+	static int mini_sttmnt() {
 		if(pin_check()==false){
 			System.exit(0);
 		}
