@@ -50,7 +50,7 @@ public class arshil_atm {
 			int usr_amt;
 			System.out.println("Enter Amount : ");
 			usr_amt = sc.nextInt();
-			if(usr_amt>avl_bal){
+			if(usr_amt>avl_bal) {
 				System.out.println("Insufficient Balance");
 			}
 			else{
