@@ -34,7 +34,7 @@ public class arshil_atm {
 	}
 	
 	static int mini_sttmnt() {
-		if(pin_check()==false){
+		if(pin_check()==false) {
 			System.exit(0);
 		}
 		else{
