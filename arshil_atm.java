@@ -8,7 +8,7 @@ public class arshil_atm {
 	static int usr_pin;
 	// pin check function
 	static boolean pin_check() {
-		for (int i = 0; i < 4; i++){
+		for (int i = 0; i < 4; i++) {
 			if (i == 3) {
 				System.out.println ("**********Maximum Trial Reached**********\nInsert Card Again");
 				return false;
