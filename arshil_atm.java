@@ -43,7 +43,7 @@ public class arshil_atm {
 		return 0;
 	}
 //cash withdrawl
-	static void cash_withdrawl(){
+	static void cash_withdrawl() {
 		if(pin_check()==false){
 			System.exit(0);
 		}
