@@ -22,7 +22,7 @@ class MyThread extends Thread {
 
 }
 
-class SyncThread{
+class SyncThread {
 	public static void main(String arg[]) {
 
 		MyThread t1=new MyThread("Hello");
