@@ -52,8 +52,7 @@ public class arshil_atm {
 			usr_amt = sc.nextInt();
 			if(usr_amt>avl_bal) {
 				System.out.println("Insufficient Balance");
-			}
-			else{
+			} else {
 				avl_bal-=usr_amt;
 				System.out.println("Here it is 💰💰 ");
 				System.out.println("Available balance is : "+avl_bal);
