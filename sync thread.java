@@ -1,7 +1,6 @@
 class MyThread extends Thread {
 
 	String name;
-    
     MyThread(String name) {
         this.name=name;
     }
