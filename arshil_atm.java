@@ -62,8 +62,7 @@ public class arshil_atm {
 	static void cash_deposit() {
 		if(pin_check()==false) {
 			System.exit(0);
-		}
-		else {
+		} else {
 		int usr_amt;
 		System.out.println("Enter Amount you want to deposit : ");
 		usr_amt = sc.nextInt();
