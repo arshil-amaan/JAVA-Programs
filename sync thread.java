@@ -1,4 +1,4 @@
-class MyThread extends Thread{
+class MyThread extends Thread {
 
 	String name;
     
