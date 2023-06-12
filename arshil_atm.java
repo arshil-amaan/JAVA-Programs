@@ -76,7 +76,7 @@ public class arshil_atm {
 		if(pin_check()==false) {
 			System.exit(0);
 		} else {
-			for(int i = 0 ; i<4 ; i++){
+			for(int i = 0 ; i<4 ; i++) {
 				if (i == 3){
 					System.out.println ("**********Maximum Trial Reached**********");
 					break;
