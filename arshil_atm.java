@@ -63,12 +63,12 @@ public class arshil_atm {
 		if(pin_check()==false) {
 			System.exit(0);
 		} else {
-		int usr_amt;
-		System.out.println("Enter Amount you want to deposit : ");
-		usr_amt = sc.nextInt();
-		avl_bal+=usr_amt;
-		System.out.println("Cash Deposit Successful!!!");
-		System.out.println("Available balance is : "+avl_bal);
+			int usr_amt;
+			System.out.println("Enter Amount you want to deposit : ");
+			usr_amt = sc.nextInt();
+			avl_bal+=usr_amt;
+			System.out.println("Cash Deposit Successful!!!");
+			System.out.println("Available balance is : "+avl_bal);
 		}
 	}
 	//pin Change
