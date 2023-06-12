@@ -91,9 +91,10 @@ public class arshil_atm {
 					return 0;
 				}
 			}
-		}return 0;
+		}
+		return 0;
 	}
-//main function
+	//main function
   public static void main (String[]args)
   {
     int card = 0;
