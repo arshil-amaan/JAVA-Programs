@@ -72,7 +72,7 @@ public class arshil_atm {
 		}
 	}
 	//pin Change
-	static int pin_change(){
+	static int pin_change() {
 		if(pin_check()==false){
 			System.exit(0);
 		}
