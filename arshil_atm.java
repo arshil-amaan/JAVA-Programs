@@ -58,7 +58,7 @@ public class arshil_atm {
 			}
 		}
 	}
-//cash deposit
+	//cash deposit
 	static void cash_deposit() {
 		if(pin_check()==false) {
 			System.exit(0);
