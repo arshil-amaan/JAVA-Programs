@@ -103,8 +103,7 @@ public class arshil_atm {
 			card = sc.nextInt ();
 		}
 
-    while (lang != 1)
-      {
+    while (lang != 1) {
     	System.out.println ("Choose Language to Proceed");
     	System.out.println ("English - 1\nHindi - 2");
     	lang = sc.nextInt ();
