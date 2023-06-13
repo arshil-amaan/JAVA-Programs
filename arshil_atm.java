@@ -110,9 +110,9 @@ public class arshil_atm {
 			if (lang == 2)
 				System.out.println("Currently Hindi Version Not Available. Kindly Choose English");
 			else if (lang != 1) {
-    	    System.out.println ("Invalid Language Selected");
-    	  }
-      }
+				System.out.println ("Invalid Language Selected");
+			}
+		}
 		//primary functioning
 	do{
 		System.out.println("****************************************");
