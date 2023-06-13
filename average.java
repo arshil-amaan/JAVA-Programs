@@ -8,8 +8,8 @@ class average {
 		average myobj = new average();
 		// storing length of array using arr.length
 		myobj.len=myobj.arr.length;
-		for(int i=0;i<myobj.arr.length;i++){
-		myobj.sum+=myobj.arr[i];
+		for(int i=0;i<myobj.arr.length;i++) {
+			myobj.sum+=myobj.arr[i];
 		}
 		System.out.println("Average is :\n"+myobj.sum/myobj.len);
 	}
