@@ -95,15 +95,13 @@ public class arshil_atm {
 		return 0;
 	}
 	//main function
-  public static void main (String[]args)
-  {
-    int card = 0;
-    int lang = 0;
-    while (card != 1)
-		{
+	public static void main (String[]args) {
+		int card = 0;
+		int lang = 0;
+		while (card != 1) {
 			System.out.println ("Welcome to PNB 🙏\nInsert Card");
-    	card = sc.nextInt ();
-      }
+			card = sc.nextInt ();
+		}
 
     while (lang != 1)
       {
