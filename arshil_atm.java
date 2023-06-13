@@ -138,5 +138,5 @@ public class arshil_atm {
 					System.out.println("**********ERROR**********\nInvalid Option Selected\n");
 			}
 		} while(usr_resp != 0);
-  }
+	}
 }
