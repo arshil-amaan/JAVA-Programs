@@ -114,29 +114,29 @@ public class arshil_atm {
 			}
 		}
 		//primary functioning
-	do{
-		System.out.println("****************************************");
-		menu();
-		usr_resp = sc.nextInt();
-		switch (usr_resp){
-			case 0:
-				System.out.println("Thank you Visit Again");
-				break;
-			case 1:
-				mini_sttmnt();
-				break;
-			case 2:
-				cash_withdrawl();
-				break;
-			case 3:
-				cash_deposit();
-				break;
-			case 4:
-				pin_change();
-				break;
-			default :
-				System.out.println("**********ERROR**********\nInvalid Option Selected\n");
-		}
-		}while(usr_resp != 0);
+		do{
+			System.out.println("****************************************");
+			menu();
+			usr_resp = sc.nextInt();
+			switch (usr_resp){
+				case 0:
+					System.out.println("Thank you Visit Again");
+					break;
+				case 1:
+					mini_sttmnt();
+					break;
+				case 2:
+					cash_withdrawl();
+					break;
+				case 3:
+					cash_deposit();
+					break;
+				case 4:
+					pin_change();
+					break;
+				default :
+					System.out.println("**********ERROR**********\nInvalid Option Selected\n");
+			}
+		} while(usr_resp != 0);
   }
 }
