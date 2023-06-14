@@ -3,7 +3,7 @@ class exception_handling{
 	int division(int a, int b){
 		int c=852;
 		// suspected erroneous instructions are kept in try block
-		try{
+		try {
 			c=a/b;
 		}
 		// if exception occur by try block then catch block gets executed
