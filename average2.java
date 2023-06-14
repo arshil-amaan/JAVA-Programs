@@ -4,6 +4,7 @@ class average2 {
 		// local variables
 		int arr[]={2,4,6,8};
 		float avg=0;
+
 		//looping for average
 		for(int i=0; i<arr.length; i++){
 			avg+=arr[i];
