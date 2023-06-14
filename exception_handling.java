@@ -1,22 +1,22 @@
 import java.util.*;
 class exception_handling{
-  int division(int a, int b){
-    int c=852;
-    // suspected erroneous instructions are kept in try block
-    try{
-      c=a/b;
-    }
-    // if exception occur by try block then catch block gets executed
-    catch(Exception e){
-      System.out.println("!!!Can't divide by zero!!!");
-      System.out.println("Exception Name : "+e);
-    }
-//     // finally block gets executed no matter error occured or not
-//     finally{
-//       // System.out.println("Finally Done");
-//     }
-    return c;
-  }
+	int division(int a, int b){
+		int c=852;
+		// suspected erroneous instructions are kept in try block
+		try{
+			c=a/b;
+		}
+		// if exception occur by try block then catch block gets executed
+		catch(Exception e){
+		System.out.println("!!!Can't divide by zero!!!");
+		System.out.println("Exception Name : "+e);
+		}
+		//     // finally block gets executed no matter error occured or not
+		//     finally{
+		//       // System.out.println("Finally Done");
+		//     }
+		return c;
+	}
   public static void main(String []args){
     Scanner sc = new Scanner(System.in);
     exception_handling obj = new exception_handling();
