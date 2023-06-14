@@ -1,6 +1,6 @@
 //code for average (local variable)
 class average2 {
-  public static void main(String[] args){
+  public static void main(String[] args) {
     // local variables
     int arr[]={2,4,6,8};
     float avg=0;
