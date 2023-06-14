@@ -8,8 +8,8 @@ class exception_handling{
 		}
 		// if exception occur by try block then catch block gets executed
 		catch(Exception e){
-		System.out.println("!!!Can't divide by zero!!!");
-		System.out.println("Exception Name : "+e);
+			System.out.println("!!!Can't divide by zero!!!");
+			System.out.println("Exception Name : "+e);
 		}
 		//     // finally block gets executed no matter error occured or not
 		//     finally{
