@@ -34,14 +34,12 @@ class exception_handling{
 
 		System.out.println(arr[3]);
 
-		try{
-      System.out.println(arr[7]);
-    }
-    
-    catch(Exception ex){
-      System.out.println("Out of Bound hai bhai");
-      System.out.println("Exception Name : "+ex);
-    }
+		try {
+			System.out.println(arr[7]);
+		} catch(Exception ex) {
+			System.out.println("Out of Bound hai bhai");
+			System.out.println("Exception Name : "+ex);
+			}
     
     System.out.println(arr[1]);
     
