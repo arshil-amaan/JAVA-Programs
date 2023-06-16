@@ -6,6 +6,7 @@ public class factorial {
 		int g=sc.nextInt();
         int fact = 1;
 		System.out.println();
+		// for(int i = g; i>0; i++) { // better
 		for(int i = 1; i<=g; i++) {
 			fact*=i;
 		}
