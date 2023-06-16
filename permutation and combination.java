@@ -19,9 +19,9 @@ public class Solution {
 		int factn = fact(n);
 		int factr = fact(r);
 		int factnr = fact((n-r));
-		if(ch==1){
+		if(ch==1) {
 			System.out.println("nCr ("+n+"C"+r+") is : "+factn/(factr*factnr));
-		} else if(ch==2){
+		} else if(ch==2) {
 			System.out.println("nPr ("+n+"P"+r+") is : "+factn/factnr);
 		}
 		sc.close();
