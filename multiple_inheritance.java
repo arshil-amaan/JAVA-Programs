@@ -13,14 +13,14 @@ interface b{
 }
 
 public class multiple_inheritance implements a,b {
-  int num3=27;
+	int num3=27;
   
-  // because interfaces are abstract hence we require to define functions in driver class 
-  public void show_a_var(){
-    System.out.println(num1);
-  }
+	// because interfaces are abstract hence we require to define functions in driver class 
+	public void show_a_var(){
+		System.out.println(num1);
+	}
 
-  public void show_b_var(){
+	public void show_b_var(){
     System.out.println(num2);
   }
 
