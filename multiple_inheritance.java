@@ -3,13 +3,13 @@ import java.util.*;
 // interfaces are the way to achieve multiple inheritance in java
 // interfaces are similar to class but static and abstract in nature
 interface a{
-  int num1=9;
-  void show_a_var();
+	int num1=9;
+	void show_a_var();
 }
 
 interface b{
-  int num2=18;
-  void show_b_var();
+	int num2=18;
+	void show_b_var();
 }
 
 public class multiple_inheritance implements a,b {
