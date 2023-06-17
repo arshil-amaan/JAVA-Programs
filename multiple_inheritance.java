@@ -21,27 +21,27 @@ public class multiple_inheritance implements a,b {
 	}
 
 	public void show_b_var(){
-    System.out.println(num2);
+	    System.out.println(num2);
   }
 
-  public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-    multiple_inheritance obj = new multiple_inheritance();
-
-    System.out.println("normally print "+num1);
-    System.out.println("normally print "+num2);
-    System.out.println("instance variable "+obj.num3);
-
-    obj.num3=sc.nextInt();
-
-    System.out.println("normally print "+num1);
-    System.out.println("normally print "+num2);
-    System.out.println("instance variable "+obj.num3);
-
-    System.out.print("print using fun call ");
-    obj.show_a_var();
-    System.out.print("print using fun call ");
-    obj.show_b_var();
-    sc.close();
-  }
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		multiple_inheritance obj = new multiple_inheritance();
+		
+		System.out.println("normally print "+num1);
+		System.out.println("normally print "+num2);
+		System.out.println("instance variable "+obj.num3);
+		
+		obj.num3=sc.nextInt();
+		
+		System.out.println("normally print "+num1);
+		System.out.println("normally print "+num2);
+		System.out.println("instance variable "+obj.num3);
+		
+		System.out.print("print using fun call ");
+		obj.show_a_var();
+		System.out.print("print using fun call ");
+		obj.show_b_var();
+		sc.close();
+	}
 }
