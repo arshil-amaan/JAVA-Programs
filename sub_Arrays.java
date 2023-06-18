@@ -29,7 +29,7 @@ public class Sub_Arrays {
   }
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int arr[] = {4, 7, 8, 3, 6};
+    int arr[] = {4, -7, 8, -3, 6};
     sub_arrays(arr);
     sc.close();
   }
