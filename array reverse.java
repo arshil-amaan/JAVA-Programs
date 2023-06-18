@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ArrayCRUD {
   static void reverse(int[] myArray) {
-    for(int i = 0; i < myArray.length/2 ; i++){
+    for(int i = 0; i < myArray.length/2 ; i++) {
       int temp = myArray[i];
       myArray[i] = myArray[myArray.length-1-i];
       myArray[myArray.length-1-i] = temp;
