@@ -26,7 +26,7 @@ public class ArrayCRUD {
         int[] arr = new int[5];
         update(arr);
 
-        int[] brr = {3, 4, 5, 1};
+        int[] brr = {3, 4, 5, Integer.MIN_VALUE};
         update(brr);
         sc.close();
     }
