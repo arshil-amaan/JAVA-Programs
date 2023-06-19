@@ -21,13 +21,13 @@ public class ArrayCRUD {
 		}
 	}
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] arr = new int[5];
-        update(arr);
-
-        int[] brr = {3, 4, 5, 7};
-        update(brr);
-        sc.close();
-    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[5];
+		update(arr);
+		
+		int[] brr = {3, 4, 5, 7};
+		update(brr);
+		sc.close();
+	}
 }
