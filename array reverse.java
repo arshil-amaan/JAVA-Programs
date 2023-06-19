@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class ArrayCRUD {
-  static void reverse(int[] myArray) {
-    for(int i = 0; i < myArray.length/2 ; i++) {
-      int temp = myArray[i];
-      myArray[i] = myArray[myArray.length-1-i];
-      myArray[myArray.length-1-i] = temp;
-    }
-  }
+	static void reverse(int[] myArray) {
+		for(int i = 0; i < myArray.length/2 ; i++) {
+			int temp = myArray[i];
+			myArray[i] = myArray[myArray.length-1-i];
+			myArray[myArray.length-1-i] = temp;
+		}
+	}
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int arr[] = {1, 7, 8, 5, 6};
