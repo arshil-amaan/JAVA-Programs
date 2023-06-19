@@ -8,20 +8,20 @@ public class ArrayCRUD {
 			myArray[myArray.length-1-i] = temp;
 		}
 	}
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int arr[] = {1, 7, 8, 5, 6};
-    System.out.println("\nPreviously :");
-    for (int i = 0; i < arr.length; i++) {
-      System.out.print(arr[i] + " ");
-    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int arr[] = {1, 7, 8, 5, 6};
+		System.out.println("\nPreviously :");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
     
-    reverse(arr);
+		reverse(arr);
 
-    System.out.println("\nNow :");
-    for (int i = 0; i < arr.length; i++) {
-      System.out.print(arr[i] + " ");
-    }
-    sc.close();
-  }
+		System.out.println("\nNow :");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		sc.close();
+	}
 }
