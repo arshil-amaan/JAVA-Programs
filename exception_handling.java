@@ -63,5 +63,5 @@ class exception_handling {
 }
 
 // exception methods
-// e.getMessage() prints only message of error
-// e.tostring()   prints full error as string which can be stored as String
+// e.getMessage() 	prints only message of error
+// e.tostring()   	prints full error as string which can be stored as String
