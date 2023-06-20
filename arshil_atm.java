@@ -118,7 +118,7 @@ public class arshil_atm {
 			System.out.println("****************************************");
 			menu();
 			usr_resp = sc.nextInt();
-			switch (usr_resp){
+			switch (usr_resp) {
 				case 0:
 					System.out.println("Thank you Visit Again");
 					break;
