@@ -3,7 +3,7 @@ class average {
 	// instance variables
 	int len,arr[]={2,4,7,8};
 	float sum=0;
-	public static void main(String []args){
+	public static void main(String []args) {
 		// Object created to access instance variables
 		average myobj = new average();
 		// storing length of array using arr.length
