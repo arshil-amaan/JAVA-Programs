@@ -53,7 +53,7 @@ public class arshil_atm {
 				System.out.println("Insufficient Balance");
 			} else {
 				avl_bal-=usr_amt;
-				System.out.println("Here it is 💰💰 ");
+				System.out.println("Here it is $$💰💰$$ ");
 				System.out.println("Available balance is : "+avl_bal);
 			}
 		}
