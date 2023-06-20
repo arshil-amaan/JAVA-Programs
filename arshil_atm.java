@@ -107,7 +107,7 @@ public class arshil_atm {
 			System.out.println ("Choose Language to Proceed");
 			System.out.println ("English - 1\nHindi - 2");
 			lang = sc.nextInt ();
-			if (lang == 2){
+			if (lang == 2) {
 				System.out.println("Currently Hindi Version Not Available. Kindly Choose English");
 			} else if (lang != 1) {
 				System.out.println ("Invalid Language Selected");
