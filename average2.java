@@ -6,7 +6,7 @@ class average2 {
 		float avg=0;
 
 		//looping for average
-		for(int i=0; i<arr.length; i++){
+		for(int i=0; i<arr.length; i++) {
 			avg+=arr[i];
 		}
 		System.out.println("Average is :\n"+avg/arr.length);
