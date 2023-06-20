@@ -83,7 +83,7 @@ public class arshil_atm {
 				}
 				System.out.println("Enter new PIN");
 				usr_pin = sc.nextInt();
-				if(usr_pin<1000 || usr_pin>9999){
+				if(usr_pin<1000 || usr_pin>9999) {
 					System.out.println("PIN MUST contain 4 Digits");
 				} else {
 					pin = usr_pin;
