@@ -1,5 +1,5 @@
 import java.util.*;
-class exception_handling{
+class exception_handling {
 	int division(int a, int b) {
 		int c=852;
 		// suspected erroneous instructions are kept in try block
