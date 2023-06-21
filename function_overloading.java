@@ -1,8 +1,8 @@
 public class function_overloading {
-  // calc function taking 2 int arguments 
-  public int calc(int a, int b){
-    // this function returns product of a & b
-    return (a*b);
+	// calc function taking 2 int arguments 
+	public int calc(int a, int b){
+		// this function returns product of a & b
+		return (a*b);
   }
   // calc function taking 3 int arguments 
   public int calc(int a, int b,int c){
