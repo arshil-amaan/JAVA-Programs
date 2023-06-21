@@ -39,26 +39,26 @@ public class filehandling {
 			System.out.println(file_data);
 			// closing scanner
 			file_content.close();
-    } catch(Exception e) {
-      System.out.println("Error is : "+e);
-    }
-    // **********************************************************
-    
-    // delete a file
-    try {
-      System.out.println("Enter file name with extension to delete");
-      String dlt_file = sc.nextLine();
-      // object of File
-      File f = new File(dlt_file);
-      try{
-        // deleting file
-        f.delete();
-      } catch(Exception e){
-        System.out.println("Error is : "+e);
-      }
-    } catch (Exception e) {
-      System.out.println("Error is : "+e);
-    }
-    sc.close();
-  }
+		} catch(Exception e) {
+		System.out.println("Error is : "+e);
+		}
+		// **********************************************************
+		
+		// delete a file
+		try {
+			System.out.println("Enter file name with extension to delete");
+			String dlt_file = sc.nextLine();
+			// object of File
+			File f = new File(dlt_file);
+			try{
+				// deleting file
+				f.delete();
+			} catch(Exception e){
+				System.out.println("Error is : "+e);
+			}
+		} catch (Exception e) {
+			System.out.println("Error is : "+e);
+		}
+		sc.close();
+	}
 }
