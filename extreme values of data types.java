@@ -1,4 +1,4 @@
-public class high_low_data_types{
+public class high_low_data_types {
   public static void main(String[] args){
   	double[] brr = {
           Byte.MAX_VALUE,
