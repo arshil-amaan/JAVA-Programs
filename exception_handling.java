@@ -11,10 +11,10 @@ class exception_handling {
 			System.out.println("!!!Can't divide by zero!!!");
 			System.out.println("Exception Name : "+e);
 		}
-// 			// finally block gets executed no matter error occured or not
-// 			finally{
-// 				System.out.println("Finally Done");
-// 			}
+		// // finally block gets executed no matter error occured or not
+		// finally{
+		// 	System.out.println("Finally Done");
+		// }
 		return c;
 	}
 	public static void main(String []args) {
@@ -51,15 +51,15 @@ class exception_handling {
 		String str4 = "Amaan";
 		System.out.println(str3.length());
 		try {
-      System.out.println(str1.length());
-      System.out.println(str4.length());
-    } catch(Exception exc) {
-      System.out.println("string me null hai");
-      System.out.println("Exception Name : "+exc);
-    }
-    System.out.println(str2.length());
-    sc.close();
-  }
+			System.out.println(str1.length());
+			System.out.println(str4.length());
+		} catch(Exception exc) {
+			System.out.println("string me null hai");
+			System.out.println("Exception Name : "+exc);
+		}
+		System.out.println(str2.length());
+		sc.close();
+	}
 }
 
 // exception methods
