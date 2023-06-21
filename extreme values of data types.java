@@ -1,5 +1,5 @@
 public class high_low_data_types {
-  public static void main(String[] args){
+  public static void main(String[] args) {
   	double[] brr = {
           Byte.MAX_VALUE,
           Byte.MIN_VALUE,
