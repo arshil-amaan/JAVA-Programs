@@ -3,7 +3,7 @@ import java.io.*;
 
 // driver class
 public class filehandling {
-	public static void main(String []args){
+	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter file name with extension");
 		String file_name = sc.nextLine();
