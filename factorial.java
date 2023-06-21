@@ -10,7 +10,7 @@ public class factorial {
 		for(int i = 1; i<=g; i++) {
 			fact*=i;
 		}
-        System.out.println(fact);
-        sc.close();
+		System.out.println(fact);
+		sc.close();
 	}
 }
