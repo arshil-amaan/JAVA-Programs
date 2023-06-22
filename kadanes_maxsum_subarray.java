@@ -14,7 +14,7 @@ import java.util.*;
       // System.out.print("\n"+temp+"\t"+maxis);
     }
     System.out.println("\nMaximum sub array is: "+maxis);
-    return 0;
+    return maxis;
   }
   public static void main( String[] args){
     Scanner sc = new Scanner(System.in);
