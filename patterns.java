@@ -41,23 +41,18 @@ public class patterns {
   }
   
   static void skew_square(){
-    //     *****
-    //    *   *
-    //   *   *
-    //  *   *
-    // *****
-    //         * * * * *
-    //       *       *
-    //     *       *
-    //   *       *
-    // * * * * *
+	//         * * * * *
+	//       * * * * *
+	//     * * * * *
+	//   * * * * *
+	// * * * * *
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter no. of lines : ");
     int limit = sc.nextInt();
     System.out.println();
     for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<limit*2-i-1 ; j++){
-        if(j>=limit){
+      for(int j = 0 ; j<((limit*2)-1)-i ; j++){
+        if(j>=limit-1-i){
           System.out.print("* ");
         } else {
           System.out.print("  ");
