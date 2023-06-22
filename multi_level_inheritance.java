@@ -42,7 +42,7 @@ class multi_level_inheritance extends parent1{
 		
 		obj.ci = obj.p*Math.pow((1 + obj.r/100),obj.t);
 		System.out.println("Compound Interest is : "+(obj.ci-obj.p));
-		System.out.println("Compound Interest + Principle Amt. is : "+(obj.ci));
+		System.out.printf("Compound Interest + Principle Amt. is : %.2f\n",obj.ci);
 		
 		sc.close();
 	}
