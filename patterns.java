@@ -61,6 +61,28 @@ public class patterns {
       System.out.println();
     }
   }
+  
+  static void skew_hollow_square(){
+    //            * * * * *
+    //          *       *
+    //        *       *
+    //      *       *
+    //    * * * * *
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter no. of lines : ");
+    int limit = sc.nextInt();
+    System.out.println();
+    for(int i = 0 ; i<limit ; i++){
+      for(int j = 0 ; j<limit*2-1-i ; j++){
+        if((j>limit-2-i && (i==0 || i==limit-1)) || (j==limit-1-i) ||j==limit*2-2-i){
+          System.out.print("* ");
+        } else {
+          System.out.print("  ");
+        }
+      }
+      System.out.println();
+    }
+  }
 
   static void half_pyramid(){
     // *
@@ -263,7 +285,8 @@ public class patterns {
     // square_wall();
     // hollow_square_wall();
     // skew_square();
-		// half_pyramid();
+    // skew_hollow_square();
+    // half_pyramid();
     // invert_half_pyramid();
     // other_half_pyramid();
     // other_invert_half_pyramid();
