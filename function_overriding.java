@@ -9,11 +9,11 @@ class A {
 }
 // driver class
 class function_overriding {
-  int fun(int n){
-    System.out.print("defined inside driver class ");
-    // this function returns triple of n
-    return 3*n;
-  }
+	int fun(int n) {
+		System.out.print("defined inside driver class ");
+		// this function returns triple of n
+		return 3*n;
+	}
   public static void main(String []args){
     Scanner sc = new Scanner(System.in);
     A ob = new A();
