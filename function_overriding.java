@@ -1,6 +1,6 @@
 import java.util.*;
 
-class A{
+class A {
   int fun(int m){
     System.out.println("defined in A class");
     //this function returns double of m
