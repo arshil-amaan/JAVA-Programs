@@ -1,14 +1,14 @@
 import java.util.*;
 
 class A {
-  int fun(int m) {
-    System.out.println("defined in A class");
-    //this function returns double of m
-    return 2*m;
-  }
+	int fun(int m) {
+		System.out.println("defined in A class");
+		//this function returns double of m
+		return 2*m;
+	}
 }
 // driver class
-class function_overriding{
+class function_overriding {
   int fun(int n){
     System.out.print("defined inside driver class ");
     // this function returns triple of n
