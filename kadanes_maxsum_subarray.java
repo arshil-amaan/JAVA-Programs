@@ -1,6 +1,6 @@
 import java.util.*;
  public class kadanes_maxsum_subarray {
-  static int kadanes_maxsum(int arr[]){
+  static int kadanes_maxsum(int arr[]) {
     int temp=0;
     int maxis = Integer.MIN_VALUE;
     for (int i = 0; i < arr.length; i++) {
