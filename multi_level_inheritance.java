@@ -8,7 +8,7 @@ class parent0 {
 }
 
 // parent class
-class parent1 extends parent0{
+class parent1 extends parent0 {
 	double ci;
 }
 
