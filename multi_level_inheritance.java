@@ -14,7 +14,7 @@ class parent1 extends parent0 {
 
 // driver class
 class multi_level_inheritance extends parent1 {
-	public static void main(String []args){
+	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		multi_level_inheritance obj = new multi_level_inheritance();
 		System.out.println("by Arshil with ♡.");
