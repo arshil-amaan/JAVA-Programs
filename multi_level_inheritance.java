@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.Math;
 
 // parent of a parent class
-class parent0{
+class parent0 {
 	int p,t;
 	float r,si;
 }
