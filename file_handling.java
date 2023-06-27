@@ -69,7 +69,7 @@ public class file_hand {
             System.out.println("The file already exists");
         }
     }
-
+    // write data in user specified file
     static void writeToFile(String str) throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter File Name with extension: ");
