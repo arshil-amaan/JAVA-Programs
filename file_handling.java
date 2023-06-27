@@ -81,7 +81,7 @@ public class file_hand {
         fileWriter.close();
 
     }
-
+    // display information of file
     static void showFileInfo() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter File Name with extension: ");
