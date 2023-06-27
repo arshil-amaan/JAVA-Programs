@@ -107,7 +107,7 @@ public class file_hand {
         }
 
     }
-
+    // display data of file
     static void readFromFile() throws IOException {
         String content = "";
         Scanner scanner = new Scanner(System.in);
