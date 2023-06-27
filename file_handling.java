@@ -9,7 +9,7 @@ public class file_hand {
         Scanner scanner = new Scanner(System.in);
         int option=0;
         System.out.println("File Handling Operations");
-        try{
+        try {
             do {
                 System.out.println("********************************************************************************");
                 System.out.println("1. Create file\n2. Write into File\n3. File information\n4. Read from file\n5. Delete File\n6. Copy from file\n7. Word count\n8. Append from file\n9. Exit");
