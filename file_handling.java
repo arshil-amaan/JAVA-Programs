@@ -164,7 +164,7 @@ public class file_hand {
         }
 
     }
-
+    // displays number of words in file
     static void countWords() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter File Name with extension: ");
