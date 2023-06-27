@@ -136,7 +136,7 @@ public class file_hand {
         }
 
     }
-
+    // copy content of one file to another
     static void copyFile() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the source file name with extension: ");
