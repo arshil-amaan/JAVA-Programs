@@ -123,7 +123,7 @@ public class file_hand {
         fileScanner.close();
         
     }
-
+    // deletes a file
     static void deleteFile() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter File Name with extension: ");
