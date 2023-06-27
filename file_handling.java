@@ -48,7 +48,6 @@ public class file_hand {
                     default:
                         System.out.println("Goodbye");
                         System.exit(1);
-                        break;
                 }
             } while (option != 9);
         } catch(Exception o) {
