@@ -55,7 +55,7 @@ public class file_hand {
         }
         scanner.close();
     }
-
+    // file creating function
     static void createFile() throws IOException {
         Scanner sca = new Scanner(System.in);
         System.out.print("Enter File Name with extension: ");
