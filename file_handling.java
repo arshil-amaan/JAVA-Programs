@@ -51,7 +51,7 @@ public class file_hand {
                         break;
                 }
             } while (option != 9);
-        } catch(Exception o){
+        } catch(Exception o) {
             System.out.println("error "+o);
         }
         scanner.close();
