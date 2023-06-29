@@ -4,7 +4,7 @@ class a{
   int a=4,b=7;
 }
 
-class b extends a{
+class b extends a {
   int c=a*b;
   void bcla(){
     c=a*b;
