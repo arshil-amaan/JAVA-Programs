@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class a{
+class a {
   int a=4,b=7;
 }
 
