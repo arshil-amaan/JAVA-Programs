@@ -7,7 +7,7 @@ interface a {
 	void show_a_var();
 }
 
-interface b{
+interface b {
 	int num2=18;
 	void show_b_var();
 }
