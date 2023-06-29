@@ -1,6 +1,6 @@
 import java.util.*;
 public class Solution {
-	static int fact (int num){
+	static int fact (int num) {
 		int fact = 1;
 		for(int i = 1; i<=num; i++) {
 			fact*=i;
