@@ -2,7 +2,7 @@ import java.util.*;
 
 // interfaces are the way to achieve multiple inheritance in java
 // interfaces are similar to class but static and abstract in nature
-interface a{
+interface a {
 	int num1=9;
 	void show_a_var();
 }
