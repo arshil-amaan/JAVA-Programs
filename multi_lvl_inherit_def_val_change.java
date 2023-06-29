@@ -6,7 +6,7 @@ class a{
 
 class b extends a {
   int c=a*b;
-  void bcla(){
+  void bcla() {
     c=a*b;
   }
 }
