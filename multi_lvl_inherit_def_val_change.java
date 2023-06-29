@@ -11,7 +11,7 @@ class b extends a {
   }
 }
 
-public class multi_lvl_inherit_def_val_change extends a{
+public class multi_lvl_inherit_def_val_change extends a {
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
     b ob = new b();
