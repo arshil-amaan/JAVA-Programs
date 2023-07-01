@@ -1,21 +1,21 @@
 import java.util.*;
 public class Sub_Arrays {
 	static void square_wall() {
-	// * * * * *
-	// * * * * *
-	// * * * * *
-	// * * * * *
-	// * * * * *
-	Scanner sc = new Scanner(System.in);
-	System.out.print("Enter no. of lines : ");
-	int limit = sc.nextInt();
-	System.out.println();
-	for(int i = 0 ; i<limit ; i++){
-	for(int j = 0 ; j<limit ; j++){
-	System.out.print("* ");
-	}
-	System.out.println();
-	}
+		// * * * * *
+		// * * * * *
+		// * * * * *
+		// * * * * *
+		// * * * * *
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter no. of lines : ");
+		int limit = sc.nextInt();
+		System.out.println();
+		for(int i = 0 ; i<limit ; i++){
+			for(int j = 0 ; j<limit ; j++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 	}
 
   static void hollow_square_wall(){
