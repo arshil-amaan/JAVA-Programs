@@ -4,7 +4,7 @@ class simple_interest {
 	float si,p=250,r=15;
 	int t=3;
 	// main function
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		//     driver class object
 		simple_interest myobj = new simple_interest();
 		myobj.si=((myobj.p*myobj.r*myobj.t)/100);
