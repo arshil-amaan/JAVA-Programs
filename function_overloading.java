@@ -3,12 +3,12 @@ public class function_overloading {
 	public int calc(int a, int b) {
 		// this function returns product of a & b
 		return (a*b);
-  }
-  // calc function taking 3 int arguments 
-  public int calc(int a, int b,int c){
-    // this function returns sun of a,b & c
-    return (a+b+c);
-  }
+	}
+	// calc function taking 3 int arguments 
+	public int calc(int a, int b,int c) {
+		// this function returns sun of a,b & c
+		return (a+b+c);
+	}
   // calc function taking 2 double arguments 
   public double calc(double a,double b){
     // this function returns division of a by b
