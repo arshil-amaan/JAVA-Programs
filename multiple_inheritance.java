@@ -20,7 +20,7 @@ public class multiple_inheritance implements a,b {
 		System.out.println(num1);
 	}
 
-	public void show_b_var(){
+	public void show_b_var() {
 	    System.out.println(num2);
   }
 
