@@ -9,11 +9,11 @@ public class function_overloading {
 		// this function returns sun of a,b & c
 		return (a+b+c);
 	}
-  // calc function taking 2 double arguments 
-  public double calc(double a,double b){
-    // this function returns division of a by b
-    return (a/b);
-  }
+	// calc function taking 2 double arguments 
+	public double calc(double a,double b) {
+		// this function returns division of a by b
+		return (a/b);
+	}
 
   public static void main(String[] args) {
     // object created of driver class
