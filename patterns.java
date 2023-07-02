@@ -10,8 +10,8 @@ public class patterns {
 		System.out.print("Enter no. of lines : ");
 		int limit = sc.nextInt();
 		System.out.println();
-		for(int i = 0 ; i<limit ; i++){
-			for(int j = 0 ; j<limit ; j++){
+		for(int i = 0 ; i<limit ; i++) {
+			for(int j = 0 ; j<limit ; j++) {
 				System.out.print("* ");
 			}
 			System.out.println();
