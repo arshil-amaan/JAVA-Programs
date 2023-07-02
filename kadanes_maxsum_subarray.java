@@ -16,7 +16,7 @@ public class kadanes_maxsum_subarray {
 		System.out.println("\nMaximum sub array is: "+maxis);
 		return maxis;
 	}
-	public static void main( String[] args){
+	public static void main( String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = 0;
 		System.out.print("Enter Size: ");
