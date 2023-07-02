@@ -14,7 +14,7 @@ class function_overriding {
 		// this function returns triple of n
 		return 3*n;
 	}
-	public static void main(String []args){
+	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		A ob = new A();
 		function_overriding obj = new function_overriding();
