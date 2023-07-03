@@ -53,9 +53,9 @@ public class patterns {
 		for(int i = 0 ; i<limit ; i++){
 			for(int j = 0 ; j<((limit*2)-1)-i ; j++){
 			if(j>=limit-1-i){
-			System.out.print("* ");
+				System.out.print("* ");
 			} else {
-			System.out.print("  ");
+				System.out.print("  ");
 			}
 			}
 			System.out.println();
