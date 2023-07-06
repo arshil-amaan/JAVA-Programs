@@ -7,7 +7,7 @@ class MyThread extends Thread {
 	public void run() {
 		// wish(name);
 		synchronized(this) {
-			for(int i=0;i<3;i++){
+			for(int i=0;i<3;i++) {
 				System.out.println(name);
 			}
 		}
@@ -15,14 +15,14 @@ class MyThread extends Thread {
 
 	synchronized void wish(String name) {
 		
-		for(int i=0;i<3;i++)
+		for(int i=0;i<3;i++) {
 			System.out.println(name);
 		}
 	}
-
+}
 class sync_thread {
 	public static void main(String arg[]) {
-
+		
 		MyThread t1=new MyThread("Hello");
 		MyThread t2=new MyThread("World");
 		t1.start();
