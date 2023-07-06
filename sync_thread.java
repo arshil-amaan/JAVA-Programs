@@ -1,15 +1,15 @@
 class MyThread extends Thread {
-
 	String name;
 	MyThread(String name) {
 		this.name=name;
-    }
+	}
 
 	public void run() {
 		// wish(name);
 		synchronized(this) {
-			for(int i=0;i<3;i++)
+			for(int i=0;i<3;i++){
 				System.out.println(name);
+			}
 		}
 	}
 
