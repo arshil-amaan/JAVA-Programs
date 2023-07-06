@@ -13,14 +13,12 @@ class MyThread extends Thread {
 		}
 	}
 
-    // synchronized void wish(String name) {
+	synchronized void wish(String name) {
 		
-    //     for(int i=0;i<3;i++)
-	// 		System.out.println(name);
-	// }
-
-
-}
+		for(int i=0;i<3;i++)
+			System.out.println(name);
+		}
+	}
 
 class sync_thread {
 	public static void main(String arg[]) {
