@@ -35,10 +35,10 @@ class Parent {
 }
 
 // child class
-public class InnerClassExample extends Parent {
+public class innerClassExample extends Parent {
 
   // constructor
-  InnerClassExample() {
+  innerClassExample() {
     System.out.println("test constr called");
   }
 
@@ -46,7 +46,7 @@ public class InnerClassExample extends Parent {
   public static void main(String[] args) {
 
     // object of child class
-    InnerClassExample pa = new InnerClassExample();
+    innerClassExample pa = new innerClassExample();
 
     // object creation method of inner class
     Parent.inner_class insub = pa.new inner_class();
