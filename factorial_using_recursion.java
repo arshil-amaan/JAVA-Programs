@@ -1,4 +1,4 @@
-public class faactorial_using_recursion {
+public class factorial_using_recursion {
   static int factorial(int num){
     if(num==1){
       return 1;
