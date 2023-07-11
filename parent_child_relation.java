@@ -4,10 +4,10 @@ class parent {
 		System.out.print("using print : ");
 		return d;
 	}
-  int desc_print_par(){
-    System.out.print("data in parent is : ");
-    return d;
-  }
+	int desc_print_par() {
+		System.out.print("data in parent is : ");
+		return d;
+	}
 }
 
 class child extends parent {
