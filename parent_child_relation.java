@@ -1,9 +1,9 @@
 class parent {
-  int d = 10;
-  int print(){
-    System.out.print("using print : ");
-    return d;
-  }
+	int d = 10;
+	int print() {
+		System.out.print("using print : ");
+		return d;
+	}
   int desc_print_par(){
     System.out.print("data in parent is : ");
     return d;
