@@ -11,11 +11,11 @@ class parent {
 }
 
 class child extends parent {
-  int t = 20;
-  int print(){
-    System.out.print("using print : ");
-    return t;
-  }
+	int t = 20;
+	int print() {
+		System.out.print("using print : ");
+		return t;
+	}
   int desc_print(){
     System.out.print("data in child is : ");
     return t;
