@@ -16,10 +16,10 @@ class child extends parent {
 		System.out.print("using print : ");
 		return t;
 	}
-  int desc_print(){
-    System.out.print("data in child is : ");
-    return t;
-  }
+	int desc_print() {
+		System.out.print("data in child is : ");
+		return t;
+	}
 }
 
 public class parent_child_relation {
