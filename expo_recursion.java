@@ -2,8 +2,8 @@ public class expo_recursion {
   static int exponant(int n, int ex){
     
     // base case
-    if(ex==1){
-      return n;
+    if(ex==0){
+      return 1;
     }
     
     // to handle with negative power
