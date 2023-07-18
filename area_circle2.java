@@ -1,6 +1,8 @@
+import java.util.*;
 //code for area of circle (local Variable)
 class area_circle2 {
 	public static void main(String[] args){
+		
 		// local variable
 		double r=10.5;
 		// printing area of Circle
