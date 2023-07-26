@@ -9,8 +9,8 @@ public class binary_string_no_consecutive_one {
 			binStrs(n-1, 1, str+"1");
 		}
 	}
-  public static void main(String[] args) {
-    int n = 3;
-    binStrs(n,0,"");
-  }
+	public static void main(String[] args) {
+		int n = 3;
+		binStrs(n,0,"");
+	}
 }
