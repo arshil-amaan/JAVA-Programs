@@ -16,14 +16,14 @@ public class bit_manipulation {
 		System.out.println(n & bitMask);
 	}
 
-  static void updateIthbit(int n, int i, int myBit) {
-    // make ith bit as myBit
-    if (myBit == 0) {
-      clearIthbit(n, i);
-    } else {
-      setIthbit(n, i);
-    }
-  }
+	static void updateIthbit(int n, int i, int myBit) {
+		// make ith bit as myBit
+		if (myBit == 0) {
+			clearIthbit(n, i);
+		} else {
+			setIthbit(n, i);
+		}
+	}
 
   static void clearIbits(int n, int i) {
     // make last i bits 0
