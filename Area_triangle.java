@@ -1,5 +1,5 @@
- // code for Area of Triangle (static variables)
- class area_triangle {
+// code for Area of Triangle (static variables)
+class Area_triangle {
 	// static variables
 	static float b=5,h=7;
 	public static void main(String[] args){
