@@ -1,5 +1,5 @@
 //code for area of circle (instance Variable)
-class area_circle {
+class Area_circle {
 	// instance variable
 	double r=10.5;
 	public static void main(String []args){
