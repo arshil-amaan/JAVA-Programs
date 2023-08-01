@@ -1,6 +1,6 @@
 import java.util.*;
 //code for area of circle (local Variable)
-class area_circle2 {
+class Area_circle2 {
 	public static void main(String[] args){
 		Scanner scs = new Scanner(System.in);
 		// local variable
