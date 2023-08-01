@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArrayCRUD {
+public class ArrayRev {
 	static void reverse(int[] myArray) {
 		for(int i = 0; i < myArray.length/2 ; i++) {
 			int temp = myArray[i];
