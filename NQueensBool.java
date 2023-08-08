@@ -18,40 +18,40 @@ public class NQueensBool {
 		return false;
 	}
 
-  static boolean isSafe(char[][] arr, int i, int j) {
-    int temi = i;
-    int temj = j;
-    // check up
-    while (temi > -1) {
-      if (arr[temi][j] == 'Q') {
-        return false;
-      }
-      temi--;
-    }
-    temi = i;
-    temj = j;
-
-    // check up left
-    while (temj > -1 && temi > -1) {
-      if (arr[temi][temj] == 'Q') {
-        return false;
-      }
-      temi--;
-      temj--;
-    }
-    temi = i;
-    temj = j;
-
-    // check up right
-    while (temj < arr[0].length && temi > -1) {
-      if (arr[temi][temj] == 'Q') {
-        return false;
-      }
-      temi--;
-      temj++;
-    }
-    return true;
-  }
+	static boolean isSafe(char[][] arr, int i, int j) {
+		int temi = i;
+		int temj = j;
+		// check up
+		while (temi > -1) {
+			if (arr[temi][j] == 'Q') {
+				return false;
+			}
+			temi--;
+		}
+		temi = i;
+		temj = j;
+		
+		// check up left
+		while (temj > -1 && temi > -1) {
+			if (arr[temi][temj] == 'Q') {
+				return false;
+			}
+			temi--;
+			temj--;
+		}
+		temi = i;
+		temj = j;
+		
+		// check up right
+		while (temj < arr[0].length && temi > -1) {
+			if (arr[temi][temj] == 'Q') {
+				return false;
+			}
+			temi--;
+			temj++;
+		}
+		return true;
+	}
 
   static void printArr(char[][] arr) {
     System.out.println("----------Chess Board----------");
