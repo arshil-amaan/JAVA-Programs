@@ -53,15 +53,15 @@ public class NQueensBool {
 		return true;
 	}
 
-  static void printArr(char[][] arr) {
-    System.out.println("----------Chess Board----------");
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr.length; j++) {
-        System.out.print(arr[i][j] + " ");
-      }
-      System.out.println();
-    }
-  }
+	static void printArr(char[][] arr) {
+		System.out.println("----------Chess Board----------");
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
 
   public static void main(String[] args) {
     int n = 10;
