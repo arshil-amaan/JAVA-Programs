@@ -1,22 +1,22 @@
 public class NQueensBool {
-  static boolean nQueens(char[][] arr, int i) {
-    if (i == arr.length) {
-      System.out.println("It's Possible");
-      printArr(arr);
-      return true;
-    }
-    for (int j = 0; j < arr.length; j++) {
-      if (isSafe(arr, i, j)) {
-        arr[i][j] = 'Q';
-        if (nQueens(arr, i + 1)) {
-          return true;
-        } else {
-          arr[i][j] = '.';
-        }
-      }
-    }
-    return false;
-  }
+	static boolean nQueens(char[][] arr, int i) {
+		if (i == arr.length) {
+			System.out.println("It's Possible");
+			printArr(arr);
+			return true;
+		}
+		for (int j = 0; j < arr.length; j++) {
+			if (isSafe(arr, i, j)) {
+				arr[i][j] = 'Q';
+				if (nQueens(arr, i + 1)) {
+					return true;
+				} else {
+					arr[i][j] = '.';
+				}
+			}
+		}
+		return false;
+	}
 
   static boolean isSafe(char[][] arr, int i, int j) {
     int temi = i;
