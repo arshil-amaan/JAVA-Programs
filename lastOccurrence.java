@@ -1,4 +1,4 @@
-public class lastOccurrence{
+public class lastOccurrence {
   static int findLastIndexOf(int[] arr,int key, int i){
     if(i==arr.length){
       return -1;
