@@ -14,7 +14,7 @@ public class LinkedListBasics {
     }
   }
 
-  public Node head;
+  public static Node head;
   public Node tail;
   public int size;
 
@@ -210,8 +210,8 @@ public class LinkedListBasics {
   }
 
   public boolean checkPalindrome() {
-    // if no. of elements is 0/1 
-    if(head==null || head.next == null){
+    // if no. of elements is 0/1
+    if (head == null || head.next == null) {
       return true;
     }
 
@@ -222,7 +222,7 @@ public class LinkedListBasics {
     Node prev = null;
     Node curr = midNode;
     Node next;
-        
+
     while (curr != null) {
       next = curr.next;
       curr.next = prev;
@@ -238,25 +238,66 @@ public class LinkedListBasics {
       if (right.data != left.data) {
         return false;
       }
-      right=right.next;
-      left=left.next;
+      right = right.next;
+      left = left.next;
     }
 
     return true;
   }
 
+  public static boolean isCycle() {
+    Node slow = head;
+    Node fast = head;
+
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (slow == fast) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public static void removeCycle() {
+    if (isCycle()) {
+      Node slow = head;
+      Node fast = head;
+      Node prev = fast;
+
+      while (slow != fast) {
+        slow = slow.next;
+        fast = fast.next.next;
+      }
+      slow = head;
+      while (slow != fast) {
+        slow = slow.next;
+        prev = fast;
+        fast = fast.next;
+      }
+      prev.next = null;
+    }
+  }
+
   public static void main(String[] args) {
+    // *************************************************
+    // head = new Node(1);
+    // head.next = new Node(2);
+    // Node temp = new Node(5);
+    // head.next.next = temp;
+    // head.next.next.next = new Node(4);
+    // head.next.next.next.next = temp;
+    // *************************************************
     LinkedListBasics ll = new LinkedListBasics();
-    ll.addLast(4); // 5
-    ll.addLast(5); // 2 -> 5
-    ll.addLast(6); // 4 -> 2 -> 5
-    ll.addLast(7); // 4 -> 2 -> 5 -> 7
-    ll.addLast(7); // 4 -> 2 -> 5 -> 7
-    ll.addLast(6); // 4 -> 2 -> 5 -> 7 -> 3
-    ll.addLast(5); // 4 -> 2 -> 5 -> 7 -> 3 -> 8
-    ll.addLast(4); // 1 -> 4 -> 2 -> 5 -> 7 -> 3 -> 8
+    ll.addLast(1);
+    ll.addLast(2);
+    ll.addLast(3);
+    ll.addLast(4);
+    ll.addLast(5);
+    ll.addLast(6);
+    ll.addLast(7);
+    ll.addLast(8);
     ll.printLL();
-    System.out.println(ll.findMid(ll.head).data);
-    System.out.println(ll.checkPalindrome());
+    // *************************************************
   }
 }
