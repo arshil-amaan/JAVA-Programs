@@ -52,7 +52,7 @@ public class LinkedListBasics {
   }
 
   public void printLL() {
-    if (isEmpty()) {
+    if (head==null) {
       System.out.println("Empty Linked List");
       return;
     }
