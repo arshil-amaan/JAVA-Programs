@@ -28,7 +28,7 @@ public class LinkedListBasics {
   public void addFirst(int data) {
     Node newNode = new Node(data);
     // check for empty list
-    if (isEmpty()) {
+    if (head == null) {
       // so make it the only node in the linkedlist and set both head & tail
       head = tail = newNode;
       size++;
