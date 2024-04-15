@@ -31,5 +31,6 @@ public class buynsellstock {
 		}
 		
 		System.out.println(maxprof(arr));
+		sc.close();
 	}
 }
