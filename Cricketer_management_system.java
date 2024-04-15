@@ -102,10 +102,10 @@ public class Cricketer_management_system {
 
         Cricketer minMatchPlayedPlayer = findCricketerWithMinimumMatchesPlayed(cricketers);
         Cricketer searchedCricketer = searchCricketerById(cricketers, id);
-        
+
         System.out.println(minMatchPlayedPlayer.cricketerId + " " + minMatchPlayedPlayer.cricketerName);
-        System.out.println(searchedCricketer.cricketerId+" " + searchedCricketer.cricketerName);
-        
+        System.out.println(searchedCricketer.cricketerId + " " + searchedCricketer.cricketerName);
+
         sc.close();
     }
 }
