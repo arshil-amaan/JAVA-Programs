@@ -1,11 +1,11 @@
 import java.util.*;
 
 class Cricketer {
-    int cricketerId;
-    int matchesPlayed;
-    int totalRuns;
-    String cricketerName;
-    String team;
+    private int cricketerId;
+    private int matchesPlayed;
+    private int totalRuns;
+    private String cricketerName;
+    private String team;
 
     Cricketer(int cricketerId, int matchesPlayed, int totalRuns, String cricketerName, String team) {
         this.cricketerId = cricketerId;
@@ -101,11 +101,13 @@ public class Cricketer_management_system {
         int id = sc.nextInt();
 
         Cricketer minMatchPlayedPlayer = findCricketerWithMinimumMatchesPlayed(cricketers);
+        System.out.println("minimum matches "+minMatchPlayedPlayer.getCricketerId() + " " + minMatchPlayedPlayer.getCricketerName());
+        
         Cricketer searchedCricketer = searchCricketerById(cricketers, id);
 
-        System.out.println(minMatchPlayedPlayer.cricketerId + " " + minMatchPlayedPlayer.cricketerName);
-        System.out.println(searchedCricketer.cricketerId + " " + searchedCricketer.cricketerName);
-
+        if(searchedCricketer != null){
+            System.out.println("searched cricketer "+searchedCricketer.getCricketerId() + " " + searchedCricketer.getCricketerName());
+        }
         sc.close();
     }
 }
