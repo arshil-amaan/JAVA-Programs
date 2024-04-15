@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class file_hand {
+public class file_handling {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
@@ -57,158 +57,168 @@ public class file_hand {
     }
     // file creating function
     static void createFile() throws IOException {
-        Scanner sca = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
+        try (Scanner sca = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
 
-        String fileName = sca.nextLine();
+            String fileName = sca.nextLine();
 
-        File file = new File(fileName);
-        if (file.createNewFile()) {
-            System.out.println("New file is created");
-        } else {
-            System.out.println("The file already exists");
+            File file = new File(fileName);
+            if (file.createNewFile()) {
+                System.out.println("New file is created");
+            } else {
+                System.out.println("The file already exists");
+            }
         }
     }
     // write data in user specified file
     static void writeToFile(String str) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
-        String fileName = scanner.nextLine();
-        FileWriter fileWriter = new FileWriter(fileName);
-        fileWriter.write(str);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
+            String fileName = scanner.nextLine();
+            FileWriter fileWriter = new FileWriter(fileName);
+            fileWriter.write(str);
 
-        System.out.println("Writing successful");
-        fileWriter.close();
+            System.out.println("Writing successful");
+            fileWriter.close();
+        }
 
     }
     // display information of file
     static void showFileInfo() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
-        String fileName = scanner.nextLine();
-        File file = new File(fileName);
-        if (file.exists()) {
-            // Getting file name
-            System.out.println("The name of the file is: " + file.getName());
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
+            String fileName = scanner.nextLine();
+            File file = new File(fileName);
+            if (file.exists()) {
+                // Getting file name
+                System.out.println("The name of the file is: " + file.getName());
 
-            // Getting path of the file
-            System.out.println("The absolute path of the file is: " + file.getAbsolutePath());
+                // Getting path of the file
+                System.out.println("The absolute path of the file is: " + file.getAbsolutePath());
 
-            // Checking whether the file is writable or not
-            System.out.println("Is file writable?: " + file.canWrite());
+                // Checking whether the file is writable or not
+                System.out.println("Is file writable?: " + file.canWrite());
 
-            // Checking whether the file is readable or not
-            System.out.println("Is file readable?: " + file.canRead());
+                // Checking whether the file is readable or not
+                System.out.println("Is file readable?: " + file.canRead());
 
-            // Getting the length of the file in bytes
-            System.out.println("The size of the file in bytes is: " + file.length());
-        } else {
-            System.out.println("The file does not exist.");
+                // Getting the length of the file in bytes
+                System.out.println("The size of the file in bytes is: " + file.length());
+            } else {
+                System.out.println("The file does not exist.");
+            }
         }
 
     }
     // display data of file
     static void readFromFile() throws IOException {
         String content = "";
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
-        String fileName = scanner.nextLine();
-        File file = new File(fileName);
-        Scanner fileScanner = new Scanner(file);
-        while (fileScanner.hasNextLine()) {
-            content += fileScanner.nextLine() + "\n";
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
+            String fileName = scanner.nextLine();
+            File file = new File(fileName);
+            Scanner fileScanner = new Scanner(file);
+            while (fileScanner.hasNextLine()) {
+                content += fileScanner.nextLine() + "\n";
+            }
+            System.out.print("Content of file "+fileName+" is: ");
+            System.out.println(content);
+            fileScanner.close();
         }
-        System.out.print("Content of file "+fileName+" is: ");
-        System.out.println(content);
-        fileScanner.close();
         
     }
     // deletes a file
     static void deleteFile() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
-        String fileName = scanner.nextLine();
-        File file = new File(fileName);
-        if (file.delete()) {
-            System.out.println("File deleted successfully.");
-        } else {
-            System.out.println("Failed to delete the file.");
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
+            String fileName = scanner.nextLine();
+            File file = new File(fileName);
+            if (file.delete()) {
+                System.out.println("File deleted successfully.");
+            } else {
+                System.out.println("Failed to delete the file.");
+            }
         }
 
     }
     // copy content of one file to another
     static void copyFile() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the source file name with extension: ");
-        String sourceFileName = scanner.nextLine();
-        System.out.print("Enter the destination file name with extension: ");
-        String destinationFileName = scanner.nextLine();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter the source file name with extension: ");
+            String sourceFileName = scanner.nextLine();
+            System.out.print("Enter the destination file name with extension: ");
+            String destinationFileName = scanner.nextLine();
 
-        File sourceFile = new File(sourceFileName);
-        File destinationFile = new File(destinationFileName);
+            File sourceFile = new File(sourceFileName);
+            File destinationFile = new File(destinationFileName);
 
-        if (sourceFile.exists()) {
-            Scanner sourceScanner = new Scanner(sourceFile);
-            FileWriter destinationWriter = new FileWriter(destinationFile);
+            if (sourceFile.exists()) {
+                Scanner sourceScanner = new Scanner(sourceFile);
+                FileWriter destinationWriter = new FileWriter(destinationFile);
 
-            while (sourceScanner.hasNextLine()) {
-                String line = sourceScanner.nextLine();
-                destinationWriter.write(line + "\n");
+                while (sourceScanner.hasNextLine()) {
+                    String line = sourceScanner.nextLine();
+                    destinationWriter.write(line + "\n");
+                }
+
+                System.out.println("File copied successfully.");
+                sourceScanner.close();
+                destinationWriter.close();
+            } else {
+                System.out.println("Source file does not exist.");
             }
-
-            System.out.println("File copied successfully.");
-            sourceScanner.close();
-            destinationWriter.close();
-        } else {
-            System.out.println("Source file does not exist.");
         }
 
     }
     // displays number of words in file
     static void countWords() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter File Name with extension: ");
-        String fileName = scanner.nextLine();
-        File file = new File(fileName);
-        if (file.exists()) {
-            Scanner fileScanner = new Scanner(file);
-            int wordCount = 0;
-            while (fileScanner.hasNext()) {
-                String word = fileScanner.next();
-                wordCount++;
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter File Name with extension: ");
+            String fileName = scanner.nextLine();
+            File file = new File(fileName);
+            if (file.exists()) {
+                Scanner fileScanner = new Scanner(file);
+                int wordCount = 0;
+                while (fileScanner.hasNext()) {
+                    // String word = fileScanner.next();
+                    fileScanner.next();
+                    wordCount++;
+                }
+                System.out.println("Number of words in the file: " + wordCount);
+                fileScanner.close();
+            } else {
+                System.out.println("The file does not exist.");
             }
-            System.out.println("Number of words in the file: " + wordCount);
-            fileScanner.close();
-        } else {
-            System.out.println("The file does not exist.");
         }
     }
 
     static void appendinfile()  throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        
-        String content = "";
-        System.out.print("Enter the source file name with extension: ");
-        String fileName = scanner.nextLine();
-        File file = new File(fileName);
-        Scanner fileScanner = new Scanner(file);
-
-        String content2 = "";
-        System.out.print("Enter the destination file name with extension: ");
-        String fileName2 = scanner.nextLine();
-        File file2 = new File(fileName2);
-        Scanner fileScanner2 = new Scanner(file2);
-        
-        while (fileScanner2.hasNextLine()) {
-            content += fileScanner2.nextLine();
+        try (Scanner scanner = new Scanner(System.in)) {
+            String content = "";
+            System.out.print("Enter the source file name with extension: ");
+            String fileName = scanner.nextLine();
+            File file = new File(fileName);
+            try (Scanner fileScanner = new Scanner(file)) {
+                // String content2 = "";
+                System.out.print("Enter the destination file name with extension: ");
+                String fileName2 = scanner.nextLine();
+                File file2 = new File(fileName2);
+                try (Scanner fileScanner2 = new Scanner(file2)) {
+                    while (fileScanner2.hasNextLine()) {
+                        content += fileScanner2.nextLine();
+                    }
+                }
+                
+                while (fileScanner.hasNextLine()) {
+                    content += fileScanner.nextLine();
+                }
+                // writeToFile(content);
+                FileWriter fw = new FileWriter(file2);
+                fw.write(content);
+                fw.close();
+            }
         }
-        while (fileScanner.hasNextLine()) {
-            content += fileScanner.nextLine();
-        }
-        // writeToFile(content);
-        FileWriter fw = new FileWriter(file2);
-        fw.write(content);
-        fw.close();
+        
         System.out.println("Append Successful");
     }
 }
