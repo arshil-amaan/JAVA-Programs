@@ -98,13 +98,14 @@ public class Cricketer_management_system {
             Cricketer player = new Cricketer(a, b, c, d, e);
             cricketers[i] = player;
         }
-        Cricketer minMatchPlayedPlayer = findCricketerWithMinimumMatchesPlayed(cricketers);
-        System.out.println("****************************************");
-        System.out.println(minMatchPlayedPlayer.cricketerId + " " + minMatchPlayedPlayer.cricketerName);
-        System.out.println("****************************************");
         int id = sc.nextInt();
+
+        Cricketer minMatchPlayedPlayer = findCricketerWithMinimumMatchesPlayed(cricketers);
         Cricketer searchedCricketer = searchCricketerById(cricketers, id);
+        
+        System.out.println(minMatchPlayedPlayer.cricketerId + " " + minMatchPlayedPlayer.cricketerName);
         System.out.println(searchedCricketer.cricketerId+" " + searchedCricketer.cricketerName);
+        
         sc.close();
     }
 }
