@@ -45,13 +45,14 @@ class exception_handling {
 
 		System.out.println("********************");
 
-		String str1 = null;
+		// String str1 = null;
 		String str2 = "";
 		String str3 = "Arshil";
 		String str4 = "Amaan";
 		System.out.println(str3.length());
 		try {
-			System.out.println(str1.length());
+			// uncomment for exception
+			// System.out.println(str1.length());
 			System.out.println(str4.length());
 		} catch(Exception exc) {
 			System.out.println("string me null hai");
