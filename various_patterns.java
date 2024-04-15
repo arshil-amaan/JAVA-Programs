@@ -1,270 +1,282 @@
 import java.util.*;
-public class Sub_Arrays {
+public class Various_patterns {
 	static void square_wall() {
-		// * * * * *
-		// * * * * *
-		// * * * * *
-		// * * * * *
-		// * * * * *
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter no. of lines : ");
-		int limit = sc.nextInt();
-		System.out.println();
-		for(int i = 0 ; i<limit ; i++) {
-			for(int j = 0 ; j<limit ; j++) {
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
+		try (   // * * * * *
+        		// * * * * *
+        		// * * * * *
+        		// * * * * *
+        		// * * * * *
+        Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter no. of lines : ");
+            int limit = sc.nextInt();
+            System.out.println();
+            for(int i = 0 ; i<limit ; i++) {
+              for(int j = 0 ; j<limit ; j++) {
+                System.out.print("* ");
+              }
+              System.out.println();
+            }
+        }
 	}
 
   static void hollow_square_wall(){
-    // * * * * *
-    // *       *
-    // *       *
-    // *       *
-    // * * * * *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit=sc.nextInt();
-    System.out.println();
-    for(int i = 0; i<limit; i++) {
-      for(int j = 0 ; j<limit ; j++){
-        if(i==0 || i==limit-1 || j==0 || j==limit-1){
-          System.out.print("* ");
-        } else {
-          System.out.print("  ");
+    try (// * * * * *
+        // *       *
+        // *       *
+        // *       *
+        // * * * * *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit=sc.nextInt();
+        System.out.println();
+        for(int i = 0; i<limit; i++) {
+          for(int j = 0 ; j<limit ; j++){
+            if(i==0 || i==limit-1 || j==0 || j==limit-1){
+              System.out.print("* ");
+            } else {
+              System.out.print("  ");
+            }
+          }
+          System.out.println();
         }
-      }
-      System.out.println();
     }
   }
   
   static void skew_square(){
-    //     *****
-    //    *   *
-    //   *   *
-    //  *   *
-    // *****
-    //         * * * * *
-    //       *       *
-    //     *       *
-    //   *       *
-    // * * * * *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<limit*2-i-1 ; j++){
-        if(j>=limit){
-          System.out.print("* ");
-        } else {
-          System.out.print("  ");
+    try (//     *****
+        //    *   *
+        //   *   *
+        //  *   *
+        // *****
+        //         * * * * *
+        //       *       *
+        //     *       *
+        //   *       *
+        // * * * * *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<limit*2-i-1 ; j++){
+            if(j>=limit){
+              System.out.print("* ");
+            } else {
+              System.out.print("  ");
+            }
+          }
+          System.out.println();
         }
-      }
-      System.out.println();
     }
   }
 
   static void half_pyramid(){
-    // *
-    // * *
-    // * * *
-    // * * * *
-    // * * * * *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit=sc.nextInt();
-    System.out.println();
-    for(int i = 0; i<limit; i++) {
-      for(int j = 0; j<=i; j++) {
-        System.out.print("* ");
-      }
-      System.out.println();
+    try (// *
+        // * *
+        // * * *
+        // * * * *
+        // * * * * *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit=sc.nextInt();
+        System.out.println();
+        for(int i = 0; i<limit; i++) {
+          for(int j = 0; j<=i; j++) {
+            System.out.print("* ");
+          }
+          System.out.println();
+        }
     }
   }
 
   static void invert_half_pyramid(){
-    // * * * * *
-    // * * * *
-    // * * *
-    // * *
-    // *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit=sc.nextInt();
-    System.out.println();
-    for(int i = 0; i<limit; i++) {
-      for(int j = 0; j<limit-i; j++) {
-        System.out.print("* ");
-      }
-      System.out.println();
+    try (// * * * * *
+        // * * * *
+        // * * *
+        // * *
+        // *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit=sc.nextInt();
+        System.out.println();
+        for(int i = 0; i<limit; i++) {
+          for(int j = 0; j<limit-i; j++) {
+            System.out.print("* ");
+          }
+          System.out.println();
+        }
     }
   }
   
   static void other_half_pyramid(){
-    //         *
-    //       * *
-    //     * * *
-    //   * * * *
-    // * * * * *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<limit ; j++){
-        if(j<limit-i-1){
-          System.out.print("  ");
-        } else {
-          System.out.print("* ");
+    try (//         *
+        //       * *
+        //     * * *
+        //   * * * *
+        // * * * * *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<limit ; j++){
+            if(j<limit-i-1){
+              System.out.print("  ");
+            } else {
+              System.out.print("* ");
+            }
+            // System.out.print("j");
+          }
+          System.out.println();
         }
-        // System.out.print("j");
-      }
-      System.out.println();
     }
   }
   
   static void other_invert_half_pyramid(){
-    // * * * * *
-    //   * * * *
-    //     * * *
-    //       * *
-    //         *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<limit ; j++){
-        if(j<i){
-          System.out.print("  ");
-        } else {
-          System.out.print("* ");
+    try (// * * * * *
+        //   * * * *
+        //     * * *
+        //       * *
+        //         *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<limit ; j++){
+            if(j<i){
+              System.out.print("  ");
+            } else {
+              System.out.print("* ");
+            }
+          }
+          System.out.println();
         }
-      }
-      System.out.println();
     }
   }
   
 
 
   static void floyds_triangle_pattern(){
-    // 1
-    // 2 3
-    // 4 5 6
-    // 7 8 9 10
-    // 11 12 13 14 15
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    int num = 1;
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<i+1 ; j++){
-        System.out.print(num+"\t");
-        num++;
-      }
-      System.out.println();
-      // num=1;  //to restart from 1
+    try (// 1
+        // 2 3
+        // 4 5 6
+        // 7 8 9 10
+        // 11 12 13 14 15
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        int num = 1;
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<i+1 ; j++){
+            System.out.print(num+"\t");
+            num++;
+          }
+          System.out.println();
+          // num=1;  //to restart from 1
+        }
     }
   }
   
   static void inverted_number_triangle(){
-    // 1       2       3       4       5
-    // 6       7       8       9
-    // 10      11      12
-    // 13      14
-    // 15
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    int num = 1;
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<limit-i ; j++){
-        System.out.print(num+"\t");
-        num++;
-      }
-      System.out.println();
+    try (// 1       2       3       4       5
+        // 6       7       8       9
+        // 10      11      12
+        // 13      14
+        // 15
+        Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        int num = 1;
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<limit-i ; j++){
+            System.out.print(num+"\t");
+            num++;
+          }
+          System.out.println();
+        }
     }
   }
   
   static void binary_triangle(){
-    // 1 
-    // 0 1
-    // 1 0 1
-    // 0 1 0 1
-    // 1 0 1 0 1
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit = sc.nextInt();
-    System.out.println();
-    for(int i = 0 ; i<limit ; i++){
-      for(int j = 0 ; j<=i ; j++){
-        if((i+j)%2==0){
-          System.out.print("1 ");
-        } else {
-          System.out.print("0 ");
+    try (// 1 
+        // 0 1
+        // 1 0 1
+        // 0 1 0 1
+        // 1 0 1 0 1
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit = sc.nextInt();
+        System.out.println();
+        for(int i = 0 ; i<limit ; i++){
+          for(int j = 0 ; j<=i ; j++){
+            if((i+j)%2==0){
+              System.out.print("1 ");
+            } else {
+              System.out.print("0 ");
+            }
+          }
+          System.out.println();
         }
-      }
-      System.out.println();
     }
   }
 
   static void character_pattern(){
-    // A
-    // B C
-    // D E F
-    // G H I J
-    // K L M N O
-    Scanner sc = new Scanner(System.in);
-	System.out.print("Enter no. of lines : ");
-	int limit=sc.nextInt();
-	char ch = 'A';
-	System.out.println();
-	for(int i = 0; i<limit; i++) {
-		for(int j = 0; j<=i; j++) {
-			System.out.print(ch+++" ");
-		}
-      // ch='A';  //to restart from A
-		System.out.println();
-		}
+    try (// A
+        // B C
+        // D E F
+        // G H I J
+        // K L M N O
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit=sc.nextInt();
+        char ch = 'A';
+        System.out.println();
+        for(int i = 0; i<limit; i++) {
+          for(int j = 0; j<=i; j++) {
+            System.out.print(ch+++" ");
+          }
+          // ch='A';  //to restart from A
+          System.out.println();
+        }
+    }
   }
   
   static void butterfly(){
-    // *        *
-    // **      **
-    // ***    ***
-    // ****  ****
-    // **********
-    // **********
-    // ****  ****
-    // ***    ***
-    // **      **
-    // *        *
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter no. of lines : ");
-    int limit=sc.nextInt();
-    for(int i = 0 ; i<limit*2 ; i++){
-      for(int j = 0 ; j<limit*2 ; j++ ){
-        if(i<limit && (j<i+1 || j>limit*2-2-i)){
-          System.out.print("* ");
-        } else if(i<limit) {
-          System.out.print("  ");
+    try (// *        *
+        // **      **
+        // ***    ***
+        // ****  ****
+        // **********
+        // **********
+        // ****  ****
+        // ***    ***
+        // **      **
+        // *        *
+    Scanner sc = new Scanner(System.in)) {
+        System.out.print("Enter no. of lines : ");
+        int limit=sc.nextInt();
+        for(int i = 0 ; i<limit*2 ; i++){
+          for(int j = 0 ; j<limit*2 ; j++ ){
+            if(i<limit && (j<i+1 || j>limit*2-2-i)){
+              System.out.print("* ");
+            } else if(i<limit) {
+              System.out.print("  ");
+            }
+            if(i>=limit && (i+j<limit*2 || j>=i)){
+              System.out.print("* ");
+            } else if(i>=limit) {
+              System.out.print("  ");
+            }
+          }
+          System.out.println();
         }
-        if(i>=limit && (i+j<limit*2 || j>=i)){
-          System.out.print("* ");
-        } else if(i>=limit) {
-          System.out.print("  ");
-        }
-      }
-      System.out.println();
     }
   }
- 
- 	 public static void main(String[] args) {
+
+  public static void main(String[] args) {
     // square_wall();
     // hollow_square_wall();
     // skew_square();
