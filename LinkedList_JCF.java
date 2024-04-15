@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class JCF_LinkedList {
+public class LinkedList_JCF {
   public static void main(String[] args) {
     LinkedList<Integer> lList = new LinkedList<>();
 
