@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class ArrayCRUD {
 	static void update(int[] myArray) {
-		Scanner in = new Scanner(System.in);
-		System.out.println("\nPreviously:");
-		for (int i = 0; i < myArray.length; i++) {
-			System.out.print(myArray[i] + " ");
+		try (Scanner in = new Scanner(System.in)) {
+			System.out.println("\nPreviously:");
+			for (int i = 0; i < myArray.length; i++) {
+				System.out.print(myArray[i] + " ");
+			}
+			
+			System.out.println("\n\nEnter new values:");
+			
+			for (int i = 0; i < myArray.length; i++) {
+				myArray[i] = in.nextInt();
+			}
 		}
-		
-		System.out.println("\n\nEnter new values:");
-		
-		for (int i = 0; i < myArray.length; i++) {
-			myArray[i] = in.nextInt();
-		}
-		
 		System.out.println("\nUpdated:");
 		
 		for (int i = 0; i < myArray.length; i++) {
