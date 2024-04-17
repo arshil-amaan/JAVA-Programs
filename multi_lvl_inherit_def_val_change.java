@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 class a {
-	int a=4,b=7;
+	int a = 4, b = 7;
 }
 
 class b extends a {
-	int c=a*b;
+	int c = a * b;
+
 	void bcla() {
-		c=a*b;
+		c = a * b;
 	}
 }
 
@@ -19,9 +20,9 @@ public class multi_lvl_inherit_def_val_change extends a {
 		ob.a = sc.nextInt();
 		System.out.println("type b : ");
 		ob.b = sc.nextInt();
-		System.out.println("prod is (using default values): "+ob.c);
+		System.out.println("prod is (using default values): " + ob.c);
 		ob.bcla();
-		System.out.println("prod is (using fun (actually change)): "+ob.c);
+		System.out.println("prod is (using fun (actually change)): " + ob.c);
 		sc.close();
 	}
 }
