@@ -1,6 +1,6 @@
 // import java.util.*;
 
-public class test {
+public class Type_conversions {
     public static void main(String[] args) {
         // Scanner sc = new Scanner(System.in);
         int num = 1;
