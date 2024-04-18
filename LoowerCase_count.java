@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class lowerCase_count {
+public class LoowerCase_count {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
